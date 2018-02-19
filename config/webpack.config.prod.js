@@ -11,7 +11,15 @@ module.exports = {
 
   entry: {
     main: [paths.appIndexJs],
-    vendor: ['react', 'react-dom'],
+    vendor: [
+      'babel-polyfill',
+      'react-dom',
+      'react-redux',
+      'react',
+      'redux-actions',
+      'redux-thunk',
+      'redux',
+    ],
   },
 
   output: {

@@ -1,9 +1,17 @@
 import React from 'react';
 import { AppContainer } from 'react-hot-loader';
+import { Provider } from 'react-redux';
+
+import createStore from '@/redux/createStore';
+import Hello from '@/components/Hello';
+
+const store = createStore();
 
 const Root = () => (
   <AppContainer>
-    <h1>Hello, world!</h1>
+    <Provider store={store}>
+      <Hello />
+    </Provider>
   </AppContainer>
 );
 
