@@ -1,3 +1,13 @@
 {
-  "extends": ["@exeto", "@exeto/react", "prettier"]
+  "extends": ["@exeto", "@exeto/react", "prettier"],
+  "rules": {
+    "react/prop-types": [
+      "error",
+      {
+        "ignore": ["classes"],
+        "customValidators": [],
+        "skipUndeclared": false
+      }
+    ]
+  }
 }

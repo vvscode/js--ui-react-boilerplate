@@ -1,5 +1,14 @@
 import React from 'react';
+import injectSheet from 'react-jss';
 
-const Hello = () => <h1>Hello, world!</h1>;
+const styles = {
+  greeting: {
+    color: '#333',
+  },
+};
 
-export default Hello;
+const Hello = ({ classes }) => (
+  <h1 className={classes.greeting}>Hello, world!</h1>
+);
+
+export default injectSheet(styles)(Hello);
