@@ -11,14 +11,18 @@ import { logIn } from '@/redux/auth/operations';
 import styles from './styles';
 
 class LoginPage extends Component {
-  constructor(...args) {
-    super(...args);
+  state = {
+    login: '',
+    password: '',
+  };
 
-    this.state = {
-      login: '',
-      password: '',
-    };
-  }
+  changeLogin = event => {
+    this.setState({ login: event.target.value });
+  };
+
+  changePassword = event => {
+    this.setState({ password: event.target.value });
+  };
 
   render() {
     const { authorized, classes } = this.props;
@@ -37,12 +41,12 @@ class LoginPage extends Component {
           className={classes.input}
           label="Email"
           fullWidth
-          onChange={x => this.setState({ login: x.target.value })}
+          onChange={this.changeLogin}
           value={login}
         />
         <TextField
           className={classes.input}
-          onChange={x => this.setState({ password: x.target.value })}
+          onChange={this.changePassword}
           type="password"
           fullWidth
           label="Password"
