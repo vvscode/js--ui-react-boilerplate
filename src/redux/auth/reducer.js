@@ -1,7 +1,13 @@
 import { handleActions } from 'redux-actions';
 
-const initialState = {};
+import { AUTHORIZE } from './types';
 
-const reducerMap = {};
+const initialState = {
+  authorized: false,
+};
+
+const reducerMap = {
+  [AUTHORIZE]: () => ({ authorized: true }),
+};
 
 export default handleActions(reducerMap, initialState);
