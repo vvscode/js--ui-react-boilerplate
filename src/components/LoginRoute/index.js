@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import injectSheet from 'react-jss';
+import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Button from 'material-ui/Button';
 import Paper from 'material-ui/Paper';
@@ -20,8 +21,15 @@ class LoginRoute extends Component {
   }
 
   render() {
-    const { classes } = this.props;
+    const { authorized, classes } = this.props;
     const { login, password } = this.state;
+
+    if (authorized) {
+      const defaultState = { from: { pathname: '/' } };
+      const { location: { state: { from } = defaultState } } = this.props;
+
+      return <Redirect to={from} />;
+    }
 
     return (
       <Paper className={classes.greeting} elevation={2}>
@@ -59,13 +67,21 @@ class LoginRoute extends Component {
 }
 
 LoginRoute.propTypes = {
+  authorized: PropTypes.bool.isRequired,
+  location: PropTypes.shape({
+    state: PropTypes.object,
+  }).isRequired,
   logIn: PropTypes.func.isRequired,
 };
+
+const mapStateToProps = ({ auth: { authorized } }) => ({
+  authorized,
+});
 
 const mapDispatchToProps = dispatch => ({
   logIn: credentials => dispatch(logIn(credentials)),
 });
 
 export default injectSheet(styles)(
-  connect(null, mapDispatchToProps)(LoginRoute),
+  connect(mapStateToProps, mapDispatchToProps)(LoginRoute),
 );
