@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { AppContainer } from 'react-hot-loader';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -14,10 +14,10 @@ const Root = () => (
   <AppContainer>
     <Provider store={store}>
       <Router>
-        <div>
+        <Fragment>
           <Route path="/login" component={LoginPage} />
           <ProtectedRoute path="/hello" component={HelloPage} />
-        </div>
+        </Fragment>
       </Router>
     </Provider>
   </AppContainer>
