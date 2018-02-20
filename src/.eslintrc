@@ -1,5 +1,8 @@
 {
   "extends": ["@exeto", "@exeto/react", "prettier"],
+  "env": {
+    "jest": true
+  },
   "rules": {
     "react/prop-types": [
       "error",
