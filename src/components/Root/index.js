@@ -4,8 +4,8 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import createStore from '@/redux/createStore';
-import HelloRoute from '@/components/HelloRoute';
-import LoginRoute from '@/components/LoginRoute';
+import HelloPage from '@/pages/HelloPage';
+import LoginPage from '@/pages/LoginPage';
 import ProtectedRoute from '@/components/ProtectedRoute';
 
 const store = createStore();
@@ -15,8 +15,8 @@ const Root = () => (
     <Provider store={store}>
       <Router>
         <div>
-          <Route path="/login" component={LoginRoute} />
-          <ProtectedRoute path="/hello" component={HelloRoute} />
+          <Route path="/login" component={LoginPage} />
+          <ProtectedRoute path="/hello" component={HelloPage} />
         </div>
       </Router>
     </Provider>

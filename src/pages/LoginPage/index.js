@@ -10,7 +10,7 @@ import TextField from 'material-ui/TextField';
 import { logIn } from '@/redux/auth/operations';
 import styles from './styles';
 
-class LoginRoute extends Component {
+class LoginPage extends Component {
   constructor(...args) {
     super(...args);
 
@@ -66,7 +66,7 @@ class LoginRoute extends Component {
   }
 }
 
-LoginRoute.propTypes = {
+LoginPage.propTypes = {
   authorized: PropTypes.bool.isRequired,
   location: PropTypes.shape({
     state: PropTypes.object,
@@ -83,5 +83,5 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default injectSheet(styles)(
-  connect(mapStateToProps, mapDispatchToProps)(LoginRoute),
+  connect(mapStateToProps, mapDispatchToProps)(LoginPage),
 );
