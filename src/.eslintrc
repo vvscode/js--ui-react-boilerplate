@@ -1,8 +1,5 @@
 {
   "extends": ["@exeto", "@exeto/react", "prettier"],
-  "env": {
-    "jest": true
-  },
   "rules": {
     "react/prop-types": [
       "error",
@@ -12,5 +9,13 @@
         "skipUndeclared": false
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
 }
