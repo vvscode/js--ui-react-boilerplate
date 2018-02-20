@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "test": "jest",
     "precommit": "lint-staged"
   },
   "lint-staged": {
@@ -16,6 +17,12 @@
     "**/*.json": [
       "prettier --write",
       "git add"
+    ]
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>src/setupTests.js",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
     ]
   },
   "dependencies": {
@@ -34,12 +41,16 @@
     "@exeto/eslint-config": "^0.2.0",
     "@exeto/eslint-config-react": "^0.1.0",
     "babel-core": "^6.26.0",
+    "babel-jest": "^22.2.2",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "case-sensitive-paths-webpack-plugin": "^2.1.1",
     "chalk": "^2.3.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.1",
     "eslint": "^4.18.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
@@ -47,6 +58,7 @@
     "fs-extra": "^5.0.0",
     "html-webpack-plugin": "^2.30.1",
     "husky": "^0.14.3",
+    "jest": "^22.3.0",
     "lint-staged": "^6.1.1",
     "prettier": "^1.10.2",
     "prop-types": "^15.6.0",
