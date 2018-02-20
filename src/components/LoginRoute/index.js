@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import injectSheet from 'react-jss';
+import PropTypes from 'prop-types';
 import Button from 'material-ui/Button';
 import Paper from 'material-ui/Paper';
 import TextField from 'material-ui/TextField';
-import injectSheet from 'react-jss';
 
+import { logIn } from '@/redux/auth/operations';
 import styles from './styles';
 
 class LoginRoute extends Component {
@@ -45,6 +48,7 @@ class LoginRoute extends Component {
             variant="raised"
             color="primary"
             className={classes.submitButton}
+            onClick={() => this.props.logIn({ login, password })}
           >
             Login
           </Button>
@@ -54,4 +58,14 @@ class LoginRoute extends Component {
   }
 }
 
-export default injectSheet(styles)(LoginRoute);
+LoginRoute.propTypes = {
+  logIn: PropTypes.func.isRequired,
+};
+
+const mapDispatchToProps = dispatch => ({
+  logIn: credentials => dispatch(logIn(credentials)),
+});
+
+export default injectSheet(styles)(
+  connect(null, mapDispatchToProps)(LoginRoute),
+);
