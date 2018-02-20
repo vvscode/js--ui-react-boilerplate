@@ -1,15 +1,14 @@
 {
   "presets": [
-    "react",
     [
       "env",
       {
-        "modules": false,
         "targets": {
           "browsers": ["> 0.5%", "last 2 versions", "Firefox ESR"]
         }
       }
-    ]
+    ],
+    "react"
   ],
   "plugins": [
     [
