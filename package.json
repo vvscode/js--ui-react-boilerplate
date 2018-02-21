@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "jest",
+    "test": "jest --coverage",
     "precommit": "lint-staged"
   },
   "lint-staged": {
@@ -23,7 +23,17 @@
     "setupTestFrameworkScriptFile": "<rootDir>src/setupTests.js",
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
-    ]
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 90,
+        "statements": 80
+      }
+    },
+    "moduleNameMapper": {
+      "^@/(.*)": "<rootDir>/src/$1.js"
+    }
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
@@ -31,6 +41,7 @@
     "material-ui": "^1.0.0-beta.34",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-form": "^2.16.3",
     "react-jss": "^8.3.3",
     "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
