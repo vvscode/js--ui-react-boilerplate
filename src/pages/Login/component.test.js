@@ -4,25 +4,25 @@ import { mount } from 'enzyme';
 import Button from 'material-ui/Button';
 import TextField from 'material-ui/TextField';
 
-import LoginPage from './component';
+import Login from './component';
 
 test('should call logIn with login and password', done => {
-  const logIn = jest.fn();
-  const loginPage = mount(
-    <LoginPage authorized={false} location={{}} logIn={logIn} />,
+  const handleLogIn = jest.fn();
+  const component = mount(
+    <Login authorized={false} location={{}} logIn={handleLogIn} />,
   );
 
-  const inputs = loginPage.find(TextField);
+  const inputs = component.find(TextField);
   const loginInput = inputs.at(0);
   const passwordInput = inputs.at(1);
-  const submitButton = loginPage.find(Button).at(1);
+  const submitButton = component.find(Button).at(1);
 
   loginInput.props().onChange({ target: { value: 'login' } });
   passwordInput.props().onChange({ target: { value: 'password' } });
   submitButton.simulate('click');
 
   setImmediate(() => {
-    expect(logIn).toHaveBeenCalledWith({
+    expect(handleLogIn).toHaveBeenCalledWith({
       login: 'login',
       password: 'password',
     });
@@ -32,17 +32,17 @@ test('should call logIn with login and password', done => {
 });
 
 test('should render correctly', () => {
-  const loginPage = mount(
-    <LoginPage authorized={false} location={{}} logIn={() => {}} />,
+  const component = mount(
+    <Login authorized={false} location={{}} logIn={() => {}} />,
   );
 
-  expect(loginPage).toMatchSnapshot();
+  expect(component).toMatchSnapshot();
 });
 
 test('should render redirect to "from" when authorized', () => {
   const redirect = mount(
     <MemoryRouter>
-      <LoginPage
+      <Login
         authorized
         location={{ state: { from: { pathname: '/test' } } }}
         logIn={() => {}}
@@ -56,7 +56,7 @@ test('should render redirect to "from" when authorized', () => {
 test('should render redirect to root when authorized and backward address is set', () => {
   const redirect = mount(
     <MemoryRouter>
-      <LoginPage authorized location={{}} logIn={() => {}} />
+      <Login authorized location={{}} logIn={() => {}} />
     </MemoryRouter>,
   ).find(Redirect);
 

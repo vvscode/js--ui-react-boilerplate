@@ -15,7 +15,7 @@ const validator = createValidator({
   password: x => (x && x.length > 0 ? null : 'Password is required'),
 });
 
-const LoginPage = props => {
+const Login = props => {
   const { authorized, classes, logIn } = props;
 
   if (authorized) {
@@ -81,7 +81,7 @@ const LoginPage = props => {
   );
 };
 
-LoginPage.propTypes = {
+Login.propTypes = {
   authorized: PropTypes.bool.isRequired,
   location: PropTypes.shape({
     state: PropTypes.object,
@@ -89,4 +89,4 @@ LoginPage.propTypes = {
   logIn: PropTypes.func.isRequired,
 };
 
-export default injectSheet(styles)(LoginPage);
+export default injectSheet(styles)(Login);

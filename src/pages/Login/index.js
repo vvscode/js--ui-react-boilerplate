@@ -1,4 +1,4 @@
-import LoginPage from './component';
+import Login from './component';
 import { connect } from 'react-redux';
 
 import { logIn } from '@/redux/auth/operations';
@@ -11,4 +11,4 @@ const mapDispatchToProps = dispatch => ({
   logIn: credentials => dispatch(logIn(credentials)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(LoginPage);
+export default connect(mapStateToProps, mapDispatchToProps)(Login);
