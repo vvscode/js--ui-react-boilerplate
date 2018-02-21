@@ -1,4 +1,5 @@
 import React from 'react';
+import { MemoryRouter } from 'react-router-dom';
 import { mount } from 'enzyme';
 import Button from 'material-ui/Button';
 import TextField from 'material-ui/TextField';
@@ -29,6 +30,20 @@ test('should call logIn with login and password', () => {
 test('should render correctly', () => {
   const loginPage = mount(
     <LoginPage authorized={false} location={{}} logIn={() => {}} />,
+  );
+
+  expect(loginPage).toMatchSnapshot();
+});
+
+test('should render redirect when authorized', () => {
+  const loginPage = mount(
+    <MemoryRouter>
+      <LoginPage
+        authorized
+        location={{ from: { pathname: '/test' } }}
+        logIn={() => {}}
+      />
+    </MemoryRouter>,
   );
 
   expect(loginPage).toMatchSnapshot();
