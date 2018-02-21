@@ -19,558 +19,662 @@ exports[`should render correctly 1`] = `
     location={Object {}}
     logIn={[Function]}
   >
-    <WithStyles(Paper)
-      className="LoginPage-greeting-0-2-1"
-      elevation={2}
+    <t
+      defaultValues={
+        Object {
+          "login": "",
+          "password": "",
+        }
+      }
+      dontValidateOnMount={true}
+      onSubmit={[Function]}
+      validateError={[Function]}
+      validateOnSubmit={true}
     >
-      <Paper
-        className="LoginPage-greeting-0-2-1"
-        classes={
+      <Connect(t)
+        defaultValues={
           Object {
-            "root": "MuiPaper-root-1",
-            "rounded": "MuiPaper-rounded-2",
-            "shadow0": "MuiPaper-shadow0-3",
-            "shadow1": "MuiPaper-shadow1-4",
-            "shadow10": "MuiPaper-shadow10-13",
-            "shadow11": "MuiPaper-shadow11-14",
-            "shadow12": "MuiPaper-shadow12-15",
-            "shadow13": "MuiPaper-shadow13-16",
-            "shadow14": "MuiPaper-shadow14-17",
-            "shadow15": "MuiPaper-shadow15-18",
-            "shadow16": "MuiPaper-shadow16-19",
-            "shadow17": "MuiPaper-shadow17-20",
-            "shadow18": "MuiPaper-shadow18-21",
-            "shadow19": "MuiPaper-shadow19-22",
-            "shadow2": "MuiPaper-shadow2-5",
-            "shadow20": "MuiPaper-shadow20-23",
-            "shadow21": "MuiPaper-shadow21-24",
-            "shadow22": "MuiPaper-shadow22-25",
-            "shadow23": "MuiPaper-shadow23-26",
-            "shadow24": "MuiPaper-shadow24-27",
-            "shadow3": "MuiPaper-shadow3-6",
-            "shadow4": "MuiPaper-shadow4-7",
-            "shadow5": "MuiPaper-shadow5-8",
-            "shadow6": "MuiPaper-shadow6-9",
-            "shadow7": "MuiPaper-shadow7-10",
-            "shadow8": "MuiPaper-shadow8-11",
-            "shadow9": "MuiPaper-shadow9-12",
+            "login": "",
+            "password": "",
           }
         }
-        component="div"
-        elevation={2}
-        square={false}
+        dontValidateOnMount={true}
+        onSubmit={[Function]}
+        store={
+          Object {
+            "dispatch": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+            Symbol(observable): [Function],
+          }
+        }
+        validateError={[Function]}
+        validateOnSubmit={true}
       >
-        <div
-          className="MuiPaper-root-1 MuiPaper-shadow2-5 MuiPaper-rounded-2 LoginPage-greeting-0-2-1"
+        <t
+          defaultValues={
+            Object {
+              "login": "",
+              "password": "",
+            }
+          }
+          dispatch={[Function]}
+          dontValidateOnMount={true}
+          formState={
+            Object {
+              "asyncErrors": Object {},
+              "asyncSuccesses": Object {},
+              "asyncValidations": 0,
+              "asyncWarnings": Object {},
+              "errors": Object {},
+              "submits": 0,
+              "submitted": false,
+              "submitting": false,
+              "successes": Object {},
+              "touched": Object {},
+              "validating": Object {},
+              "validationFailed": Object {},
+              "validationFailures": 0,
+              "values": Object {
+                "login": "",
+                "password": "",
+              },
+              "warnings": Object {},
+            }
+          }
+          onSubmit={[Function]}
+          store={
+            Object {
+              "dispatch": [Function],
+              "getState": [Function],
+              "replaceReducer": [Function],
+              "subscribe": [Function],
+              Symbol(observable): [Function],
+            }
+          }
+          storeSubscription={
+            Subscription {
+              "listeners": Object {
+                "clear": [Function],
+                "get": [Function],
+                "notify": [Function],
+                "subscribe": [Function],
+              },
+              "onStateChange": [Function],
+              "parentSub": undefined,
+              "store": Object {
+                "dispatch": [Function],
+                "getState": [Function],
+                "replaceReducer": [Function],
+                "subscribe": [Function],
+                Symbol(observable): [Function],
+              },
+              "unsubscribe": [Function],
+            }
+          }
+          validateError={[Function]}
+          validateOnSubmit={true}
         >
-          <TextField
-            className="LoginPage-input-0-2-2"
-            fullWidth={true}
-            label="Email"
-            onChange={[Function]}
-            required={false}
-            select={false}
-            value=""
+          <WithStyles(Paper)
+            className="LoginPage-greeting-0-2-1"
+            elevation={2}
           >
-            <WithStyles(FormControl)
-              className="LoginPage-input-0-2-2"
-              fullWidth={true}
-              required={false}
-            >
-              <FormControl
-                className="LoginPage-input-0-2-2"
-                classes={
-                  Object {
-                    "fullWidth": "MuiFormControl-fullWidth-31",
-                    "marginDense": "MuiFormControl-marginDense-30",
-                    "marginNormal": "MuiFormControl-marginNormal-29",
-                    "root": "MuiFormControl-root-28",
-                  }
+            <Paper
+              className="LoginPage-greeting-0-2-1"
+              classes={
+                Object {
+                  "root": "MuiPaper-root-1",
+                  "rounded": "MuiPaper-rounded-2",
+                  "shadow0": "MuiPaper-shadow0-3",
+                  "shadow1": "MuiPaper-shadow1-4",
+                  "shadow10": "MuiPaper-shadow10-13",
+                  "shadow11": "MuiPaper-shadow11-14",
+                  "shadow12": "MuiPaper-shadow12-15",
+                  "shadow13": "MuiPaper-shadow13-16",
+                  "shadow14": "MuiPaper-shadow14-17",
+                  "shadow15": "MuiPaper-shadow15-18",
+                  "shadow16": "MuiPaper-shadow16-19",
+                  "shadow17": "MuiPaper-shadow17-20",
+                  "shadow18": "MuiPaper-shadow18-21",
+                  "shadow19": "MuiPaper-shadow19-22",
+                  "shadow2": "MuiPaper-shadow2-5",
+                  "shadow20": "MuiPaper-shadow20-23",
+                  "shadow21": "MuiPaper-shadow21-24",
+                  "shadow22": "MuiPaper-shadow22-25",
+                  "shadow23": "MuiPaper-shadow23-26",
+                  "shadow24": "MuiPaper-shadow24-27",
+                  "shadow3": "MuiPaper-shadow3-6",
+                  "shadow4": "MuiPaper-shadow4-7",
+                  "shadow5": "MuiPaper-shadow5-8",
+                  "shadow6": "MuiPaper-shadow6-9",
+                  "shadow7": "MuiPaper-shadow7-10",
+                  "shadow8": "MuiPaper-shadow8-11",
+                  "shadow9": "MuiPaper-shadow9-12",
                 }
-                component="div"
-                disabled={false}
-                error={false}
-                fullWidth={true}
-                margin="none"
-                required={false}
+              }
+              component="div"
+              elevation={2}
+              square={false}
+            >
+              <div
+                className="MuiPaper-root-1 MuiPaper-shadow2-5 MuiPaper-rounded-2 LoginPage-greeting-0-2-1"
               >
-                <div
-                  className="MuiFormControl-root-28 MuiFormControl-fullWidth-31 LoginPage-input-0-2-2"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
+                <TextField
+                  className="LoginPage-input-0-2-2"
+                  error={false}
+                  fullWidth={true}
+                  label="Email"
+                  onChange={[Function]}
+                  required={false}
+                  select={false}
+                  value=""
                 >
-                  <WithStyles(InputLabel)>
-                    <InputLabel
-                      classes={
-                        Object {
-                          "animated": "MuiInputLabel-animated-36",
-                          "disabled": "MuiInputLabel-disabled-37",
-                          "formControl": "MuiInputLabel-formControl-33",
-                          "labelDense": "MuiInputLabel-labelDense-34",
-                          "root": "MuiInputLabel-root-32",
-                          "shrink": "MuiInputLabel-shrink-35",
-                        }
-                      }
-                      disableAnimation={false}
-                      disabled={false}
-                    >
-                      <WithStyles(FormLabel)
-                        className="MuiInputLabel-root-32 MuiInputLabel-formControl-33 MuiInputLabel-animated-36"
-                        data-shrink={false}
-                      >
-                        <FormLabel
-                          className="MuiInputLabel-root-32 MuiInputLabel-formControl-33 MuiInputLabel-animated-36"
-                          classes={
-                            Object {
-                              "disabled": "MuiFormLabel-disabled-41",
-                              "error": "MuiFormLabel-error-40",
-                              "focused": "MuiFormLabel-focused-39",
-                              "root": "MuiFormLabel-root-38",
-                            }
-                          }
-                          component="label"
-                          data-shrink={false}
-                        >
-                          <label
-                            className="MuiFormLabel-root-38 MuiInputLabel-root-32 MuiInputLabel-formControl-33 MuiInputLabel-animated-36"
-                            data-shrink={false}
-                          >
-                            Email
-                          </label>
-                        </FormLabel>
-                      </WithStyles(FormLabel)>
-                    </InputLabel>
-                  </WithStyles(InputLabel)>
-                  <WithStyles(Input)
+                  <WithStyles(FormControl)
+                    className="LoginPage-input-0-2-2"
+                    error={false}
                     fullWidth={true}
-                    onChange={[Function]}
-                    value=""
+                    required={false}
                   >
-                    <Input
+                    <FormControl
+                      className="LoginPage-input-0-2-2"
                       classes={
                         Object {
-                          "disabled": "MuiInput-disabled-47",
-                          "error": "MuiInput-error-45",
-                          "focused": "MuiInput-focused-46",
-                          "formControl": "MuiInput-formControl-43",
-                          "fullWidth": "MuiInput-fullWidth-50",
-                          "inkbar": "MuiInput-inkbar-44",
-                          "input": "MuiInput-input-51",
-                          "inputDense": "MuiInput-inputDense-52",
-                          "inputDisabled": "MuiInput-inputDisabled-53",
-                          "inputMultiline": "MuiInput-inputMultiline-55",
-                          "inputSearch": "MuiInput-inputSearch-56",
-                          "inputType": "MuiInput-inputType-54",
-                          "multiline": "MuiInput-multiline-49",
-                          "root": "MuiInput-root-42",
-                          "underline": "MuiInput-underline-48",
+                          "fullWidth": "MuiFormControl-fullWidth-31",
+                          "marginDense": "MuiFormControl-marginDense-30",
+                          "marginNormal": "MuiFormControl-marginNormal-29",
+                          "root": "MuiFormControl-root-28",
                         }
                       }
-                      disableUnderline={false}
+                      component="div"
+                      disabled={false}
+                      error={false}
                       fullWidth={true}
-                      multiline={false}
-                      onChange={[Function]}
-                      type="text"
-                      value=""
+                      margin="none"
+                      required={false}
                     >
                       <div
-                        className="MuiInput-root-42 MuiInput-fullWidth-50 MuiInput-formControl-43 MuiInput-inkbar-44 MuiInput-underline-48"
+                        className="MuiFormControl-root-28 MuiFormControl-fullWidth-31 LoginPage-input-0-2-2"
                         onBlur={[Function]}
                         onFocus={[Function]}
                       >
-                        <input
-                          aria-invalid={false}
-                          aria-required={false}
-                          className="MuiInput-input-51"
-                          disabled={false}
+                        <WithStyles(InputLabel)>
+                          <InputLabel
+                            classes={
+                              Object {
+                                "animated": "MuiInputLabel-animated-36",
+                                "disabled": "MuiInputLabel-disabled-37",
+                                "formControl": "MuiInputLabel-formControl-33",
+                                "labelDense": "MuiInputLabel-labelDense-34",
+                                "root": "MuiInputLabel-root-32",
+                                "shrink": "MuiInputLabel-shrink-35",
+                              }
+                            }
+                            disableAnimation={false}
+                            disabled={false}
+                          >
+                            <WithStyles(FormLabel)
+                              className="MuiInputLabel-root-32 MuiInputLabel-formControl-33 MuiInputLabel-animated-36"
+                              data-shrink={false}
+                            >
+                              <FormLabel
+                                className="MuiInputLabel-root-32 MuiInputLabel-formControl-33 MuiInputLabel-animated-36"
+                                classes={
+                                  Object {
+                                    "disabled": "MuiFormLabel-disabled-41",
+                                    "error": "MuiFormLabel-error-40",
+                                    "focused": "MuiFormLabel-focused-39",
+                                    "root": "MuiFormLabel-root-38",
+                                  }
+                                }
+                                component="label"
+                                data-shrink={false}
+                              >
+                                <label
+                                  className="MuiFormLabel-root-38 MuiInputLabel-root-32 MuiInputLabel-formControl-33 MuiInputLabel-animated-36"
+                                  data-shrink={false}
+                                >
+                                  Email
+                                </label>
+                              </FormLabel>
+                            </WithStyles(FormLabel)>
+                          </InputLabel>
+                        </WithStyles(InputLabel)>
+                        <WithStyles(Input)
+                          fullWidth={true}
                           onChange={[Function]}
-                          type="text"
                           value=""
-                        />
-                      </div>
-                    </Input>
-                  </WithStyles(Input)>
-                </div>
-              </FormControl>
-            </WithStyles(FormControl)>
-          </TextField>
-          <TextField
-            className="LoginPage-input-0-2-2"
-            fullWidth={true}
-            label="Password"
-            onChange={[Function]}
-            required={false}
-            select={false}
-            type="password"
-            value=""
-          >
-            <WithStyles(FormControl)
-              className="LoginPage-input-0-2-2"
-              fullWidth={true}
-              required={false}
-            >
-              <FormControl
-                className="LoginPage-input-0-2-2"
-                classes={
-                  Object {
-                    "fullWidth": "MuiFormControl-fullWidth-31",
-                    "marginDense": "MuiFormControl-marginDense-30",
-                    "marginNormal": "MuiFormControl-marginNormal-29",
-                    "root": "MuiFormControl-root-28",
-                  }
-                }
-                component="div"
-                disabled={false}
-                error={false}
-                fullWidth={true}
-                margin="none"
-                required={false}
-              >
-                <div
-                  className="MuiFormControl-root-28 MuiFormControl-fullWidth-31 LoginPage-input-0-2-2"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                >
-                  <WithStyles(InputLabel)>
-                    <InputLabel
-                      classes={
-                        Object {
-                          "animated": "MuiInputLabel-animated-36",
-                          "disabled": "MuiInputLabel-disabled-37",
-                          "formControl": "MuiInputLabel-formControl-33",
-                          "labelDense": "MuiInputLabel-labelDense-34",
-                          "root": "MuiInputLabel-root-32",
-                          "shrink": "MuiInputLabel-shrink-35",
-                        }
-                      }
-                      disableAnimation={false}
-                      disabled={false}
-                    >
-                      <WithStyles(FormLabel)
-                        className="MuiInputLabel-root-32 MuiInputLabel-formControl-33 MuiInputLabel-animated-36"
-                        data-shrink={false}
-                      >
-                        <FormLabel
-                          className="MuiInputLabel-root-32 MuiInputLabel-formControl-33 MuiInputLabel-animated-36"
-                          classes={
-                            Object {
-                              "disabled": "MuiFormLabel-disabled-41",
-                              "error": "MuiFormLabel-error-40",
-                              "focused": "MuiFormLabel-focused-39",
-                              "root": "MuiFormLabel-root-38",
-                            }
-                          }
-                          component="label"
-                          data-shrink={false}
                         >
-                          <label
-                            className="MuiFormLabel-root-38 MuiInputLabel-root-32 MuiInputLabel-formControl-33 MuiInputLabel-animated-36"
-                            data-shrink={false}
+                          <Input
+                            classes={
+                              Object {
+                                "disabled": "MuiInput-disabled-47",
+                                "error": "MuiInput-error-45",
+                                "focused": "MuiInput-focused-46",
+                                "formControl": "MuiInput-formControl-43",
+                                "fullWidth": "MuiInput-fullWidth-50",
+                                "inkbar": "MuiInput-inkbar-44",
+                                "input": "MuiInput-input-51",
+                                "inputDense": "MuiInput-inputDense-52",
+                                "inputDisabled": "MuiInput-inputDisabled-53",
+                                "inputMultiline": "MuiInput-inputMultiline-55",
+                                "inputSearch": "MuiInput-inputSearch-56",
+                                "inputType": "MuiInput-inputType-54",
+                                "multiline": "MuiInput-multiline-49",
+                                "root": "MuiInput-root-42",
+                                "underline": "MuiInput-underline-48",
+                              }
+                            }
+                            disableUnderline={false}
+                            fullWidth={true}
+                            multiline={false}
+                            onChange={[Function]}
+                            type="text"
+                            value=""
                           >
-                            Password
-                          </label>
-                        </FormLabel>
-                      </WithStyles(FormLabel)>
-                    </InputLabel>
-                  </WithStyles(InputLabel)>
-                  <WithStyles(Input)
+                            <div
+                              className="MuiInput-root-42 MuiInput-fullWidth-50 MuiInput-formControl-43 MuiInput-inkbar-44 MuiInput-underline-48"
+                              onBlur={[Function]}
+                              onFocus={[Function]}
+                            >
+                              <input
+                                aria-invalid={false}
+                                aria-required={false}
+                                className="MuiInput-input-51"
+                                disabled={false}
+                                onChange={[Function]}
+                                type="text"
+                                value=""
+                              />
+                            </div>
+                          </Input>
+                        </WithStyles(Input)>
+                      </div>
+                    </FormControl>
+                  </WithStyles(FormControl)>
+                </TextField>
+                <TextField
+                  className="LoginPage-input-0-2-2"
+                  error={false}
+                  fullWidth={true}
+                  label="Password"
+                  onChange={[Function]}
+                  required={false}
+                  select={false}
+                  type="password"
+                  value=""
+                >
+                  <WithStyles(FormControl)
+                    className="LoginPage-input-0-2-2"
+                    error={false}
                     fullWidth={true}
-                    onChange={[Function]}
-                    type="password"
-                    value=""
+                    required={false}
                   >
-                    <Input
+                    <FormControl
+                      className="LoginPage-input-0-2-2"
                       classes={
                         Object {
-                          "disabled": "MuiInput-disabled-47",
-                          "error": "MuiInput-error-45",
-                          "focused": "MuiInput-focused-46",
-                          "formControl": "MuiInput-formControl-43",
-                          "fullWidth": "MuiInput-fullWidth-50",
-                          "inkbar": "MuiInput-inkbar-44",
-                          "input": "MuiInput-input-51",
-                          "inputDense": "MuiInput-inputDense-52",
-                          "inputDisabled": "MuiInput-inputDisabled-53",
-                          "inputMultiline": "MuiInput-inputMultiline-55",
-                          "inputSearch": "MuiInput-inputSearch-56",
-                          "inputType": "MuiInput-inputType-54",
-                          "multiline": "MuiInput-multiline-49",
-                          "root": "MuiInput-root-42",
-                          "underline": "MuiInput-underline-48",
+                          "fullWidth": "MuiFormControl-fullWidth-31",
+                          "marginDense": "MuiFormControl-marginDense-30",
+                          "marginNormal": "MuiFormControl-marginNormal-29",
+                          "root": "MuiFormControl-root-28",
                         }
                       }
-                      disableUnderline={false}
+                      component="div"
+                      disabled={false}
+                      error={false}
                       fullWidth={true}
-                      multiline={false}
-                      onChange={[Function]}
-                      type="password"
-                      value=""
+                      margin="none"
+                      required={false}
                     >
                       <div
-                        className="MuiInput-root-42 MuiInput-fullWidth-50 MuiInput-formControl-43 MuiInput-inkbar-44 MuiInput-underline-48"
+                        className="MuiFormControl-root-28 MuiFormControl-fullWidth-31 LoginPage-input-0-2-2"
                         onBlur={[Function]}
                         onFocus={[Function]}
                       >
-                        <input
-                          aria-invalid={false}
-                          aria-required={false}
-                          className="MuiInput-input-51 MuiInput-inputType-54"
-                          disabled={false}
+                        <WithStyles(InputLabel)>
+                          <InputLabel
+                            classes={
+                              Object {
+                                "animated": "MuiInputLabel-animated-36",
+                                "disabled": "MuiInputLabel-disabled-37",
+                                "formControl": "MuiInputLabel-formControl-33",
+                                "labelDense": "MuiInputLabel-labelDense-34",
+                                "root": "MuiInputLabel-root-32",
+                                "shrink": "MuiInputLabel-shrink-35",
+                              }
+                            }
+                            disableAnimation={false}
+                            disabled={false}
+                          >
+                            <WithStyles(FormLabel)
+                              className="MuiInputLabel-root-32 MuiInputLabel-formControl-33 MuiInputLabel-animated-36"
+                              data-shrink={false}
+                            >
+                              <FormLabel
+                                className="MuiInputLabel-root-32 MuiInputLabel-formControl-33 MuiInputLabel-animated-36"
+                                classes={
+                                  Object {
+                                    "disabled": "MuiFormLabel-disabled-41",
+                                    "error": "MuiFormLabel-error-40",
+                                    "focused": "MuiFormLabel-focused-39",
+                                    "root": "MuiFormLabel-root-38",
+                                  }
+                                }
+                                component="label"
+                                data-shrink={false}
+                              >
+                                <label
+                                  className="MuiFormLabel-root-38 MuiInputLabel-root-32 MuiInputLabel-formControl-33 MuiInputLabel-animated-36"
+                                  data-shrink={false}
+                                >
+                                  Password
+                                </label>
+                              </FormLabel>
+                            </WithStyles(FormLabel)>
+                          </InputLabel>
+                        </WithStyles(InputLabel)>
+                        <WithStyles(Input)
+                          fullWidth={true}
                           onChange={[Function]}
                           type="password"
                           value=""
-                        />
+                        >
+                          <Input
+                            classes={
+                              Object {
+                                "disabled": "MuiInput-disabled-47",
+                                "error": "MuiInput-error-45",
+                                "focused": "MuiInput-focused-46",
+                                "formControl": "MuiInput-formControl-43",
+                                "fullWidth": "MuiInput-fullWidth-50",
+                                "inkbar": "MuiInput-inkbar-44",
+                                "input": "MuiInput-input-51",
+                                "inputDense": "MuiInput-inputDense-52",
+                                "inputDisabled": "MuiInput-inputDisabled-53",
+                                "inputMultiline": "MuiInput-inputMultiline-55",
+                                "inputSearch": "MuiInput-inputSearch-56",
+                                "inputType": "MuiInput-inputType-54",
+                                "multiline": "MuiInput-multiline-49",
+                                "root": "MuiInput-root-42",
+                                "underline": "MuiInput-underline-48",
+                              }
+                            }
+                            disableUnderline={false}
+                            fullWidth={true}
+                            multiline={false}
+                            onChange={[Function]}
+                            type="password"
+                            value=""
+                          >
+                            <div
+                              className="MuiInput-root-42 MuiInput-fullWidth-50 MuiInput-formControl-43 MuiInput-inkbar-44 MuiInput-underline-48"
+                              onBlur={[Function]}
+                              onFocus={[Function]}
+                            >
+                              <input
+                                aria-invalid={false}
+                                aria-required={false}
+                                className="MuiInput-input-51 MuiInput-inputType-54"
+                                disabled={false}
+                                onChange={[Function]}
+                                type="password"
+                                value=""
+                              />
+                            </div>
+                          </Input>
+                        </WithStyles(Input)>
                       </div>
-                    </Input>
-                  </WithStyles(Input)>
-                </div>
-              </FormControl>
-            </WithStyles(FormControl)>
-          </TextField>
-          <div
-            className="LoginPage-footer-0-2-4"
-          >
-            <WithStyles(Button)
-              color="primary"
-              size="small"
-            >
-              <Button
-                classes={
-                  Object {
-                    "colorInherit": "MuiButton-colorInherit-61",
-                    "disabled": "MuiButton-disabled-66",
-                    "fab": "MuiButton-fab-67",
-                    "flatPrimary": "MuiButton-flatPrimary-59",
-                    "flatSecondary": "MuiButton-flatSecondary-60",
-                    "fullWidth": "MuiButton-fullWidth-71",
-                    "keyboardFocused": "MuiButton-keyboardFocused-63",
-                    "label": "MuiButton-label-58",
-                    "mini": "MuiButton-mini-68",
-                    "raised": "MuiButton-raised-62",
-                    "raisedPrimary": "MuiButton-raisedPrimary-64",
-                    "raisedSecondary": "MuiButton-raisedSecondary-65",
-                    "root": "MuiButton-root-57",
-                    "sizeLarge": "MuiButton-sizeLarge-70",
-                    "sizeSmall": "MuiButton-sizeSmall-69",
-                  }
-                }
-                color="primary"
-                disableFocusRipple={false}
-                disableRipple={false}
-                disabled={false}
-                fullWidth={false}
-                mini={false}
-                size="small"
-                type="button"
-                variant="flat"
-              >
-                <WithStyles(ButtonBase)
-                  className="MuiButton-root-57 MuiButton-flatPrimary-59 MuiButton-sizeSmall-69"
-                  disableRipple={false}
-                  disabled={false}
-                  focusRipple={true}
-                  keyboardFocusedClassName="MuiButton-keyboardFocused-63"
-                  type="button"
+                    </FormControl>
+                  </WithStyles(FormControl)>
+                </TextField>
+                <div
+                  className="LoginPage-footer-0-2-4"
                 >
-                  <ButtonBase
-                    centerRipple={false}
-                    className="MuiButton-root-57 MuiButton-flatPrimary-59 MuiButton-sizeSmall-69"
-                    classes={
-                      Object {
-                        "disabled": "MuiButtonBase-disabled-73",
-                        "root": "MuiButtonBase-root-72",
-                      }
-                    }
-                    disableRipple={false}
-                    disabled={false}
-                    focusRipple={true}
-                    keyboardFocusedClassName="MuiButton-keyboardFocused-63"
-                    tabIndex={0}
-                    type="button"
+                  <WithStyles(Button)
+                    color="primary"
+                    size="small"
                   >
-                    <button
-                      className="MuiButtonBase-root-72 MuiButton-root-57 MuiButton-flatPrimary-59 MuiButton-sizeSmall-69"
+                    <Button
+                      classes={
+                        Object {
+                          "colorInherit": "MuiButton-colorInherit-61",
+                          "disabled": "MuiButton-disabled-66",
+                          "fab": "MuiButton-fab-67",
+                          "flatPrimary": "MuiButton-flatPrimary-59",
+                          "flatSecondary": "MuiButton-flatSecondary-60",
+                          "fullWidth": "MuiButton-fullWidth-71",
+                          "keyboardFocused": "MuiButton-keyboardFocused-63",
+                          "label": "MuiButton-label-58",
+                          "mini": "MuiButton-mini-68",
+                          "raised": "MuiButton-raised-62",
+                          "raisedPrimary": "MuiButton-raisedPrimary-64",
+                          "raisedSecondary": "MuiButton-raisedSecondary-65",
+                          "root": "MuiButton-root-57",
+                          "sizeLarge": "MuiButton-sizeLarge-70",
+                          "sizeSmall": "MuiButton-sizeSmall-69",
+                        }
+                      }
+                      color="primary"
+                      disableFocusRipple={false}
+                      disableRipple={false}
                       disabled={false}
-                      onBlur={[Function]}
-                      onFocus={[Function]}
-                      onKeyDown={[Function]}
-                      onKeyUp={[Function]}
-                      onMouseDown={[Function]}
-                      onMouseLeave={[Function]}
-                      onMouseUp={[Function]}
-                      onTouchEnd={[Function]}
-                      onTouchMove={[Function]}
-                      onTouchStart={[Function]}
-                      tabIndex={0}
+                      fullWidth={false}
+                      mini={false}
+                      size="small"
                       type="button"
+                      variant="flat"
                     >
-                      <span
-                        className="MuiButton-label-58"
+                      <WithStyles(ButtonBase)
+                        className="MuiButton-root-57 MuiButton-flatPrimary-59 MuiButton-sizeSmall-69"
+                        disableRipple={false}
+                        disabled={false}
+                        focusRipple={true}
+                        keyboardFocusedClassName="MuiButton-keyboardFocused-63"
+                        type="button"
                       >
-                        Forgot password?
-                      </span>
-                      <WithStyles(TouchRipple)
-                        center={false}
-                        innerRef={[Function]}
-                      >
-                        <TouchRipple
-                          center={false}
+                        <ButtonBase
+                          centerRipple={false}
+                          className="MuiButton-root-57 MuiButton-flatPrimary-59 MuiButton-sizeSmall-69"
                           classes={
                             Object {
-                              "ripple": "MuiTouchRipple-ripple-78",
-                              "rippleFast": "MuiTouchRipple-rippleFast-80",
-                              "rippleVisible": "MuiTouchRipple-rippleVisible-79",
-                              "root": "MuiTouchRipple-root-74",
-                              "wrapper": "MuiTouchRipple-wrapper-75",
-                              "wrapperLeaving": "MuiTouchRipple-wrapperLeaving-76",
-                              "wrapperPulsating": "MuiTouchRipple-wrapperPulsating-77",
+                              "disabled": "MuiButtonBase-disabled-73",
+                              "root": "MuiButtonBase-root-72",
                             }
                           }
+                          disableRipple={false}
+                          disabled={false}
+                          focusRipple={true}
+                          keyboardFocusedClassName="MuiButton-keyboardFocused-63"
+                          tabIndex={0}
+                          type="button"
                         >
-                          <TransitionGroup
-                            childFactory={[Function]}
-                            className="MuiTouchRipple-root-74"
-                            component="span"
-                            enter={true}
-                            exit={true}
+                          <button
+                            className="MuiButtonBase-root-72 MuiButton-root-57 MuiButton-flatPrimary-59 MuiButton-sizeSmall-69"
+                            disabled={false}
+                            onBlur={[Function]}
+                            onFocus={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseLeave={[Function]}
+                            onMouseUp={[Function]}
+                            onTouchEnd={[Function]}
+                            onTouchMove={[Function]}
+                            onTouchStart={[Function]}
+                            tabIndex={0}
+                            type="button"
                           >
                             <span
-                              className="MuiTouchRipple-root-74"
-                            />
-                          </TransitionGroup>
-                        </TouchRipple>
-                      </WithStyles(TouchRipple)>
-                    </button>
-                  </ButtonBase>
-                </WithStyles(ButtonBase)>
-              </Button>
-            </WithStyles(Button)>
-            <WithStyles(Button)
-              className="LoginPage-submitButton-0-2-3"
-              color="primary"
-              onClick={[Function]}
-              variant="raised"
-            >
-              <Button
-                className="LoginPage-submitButton-0-2-3"
-                classes={
-                  Object {
-                    "colorInherit": "MuiButton-colorInherit-61",
-                    "disabled": "MuiButton-disabled-66",
-                    "fab": "MuiButton-fab-67",
-                    "flatPrimary": "MuiButton-flatPrimary-59",
-                    "flatSecondary": "MuiButton-flatSecondary-60",
-                    "fullWidth": "MuiButton-fullWidth-71",
-                    "keyboardFocused": "MuiButton-keyboardFocused-63",
-                    "label": "MuiButton-label-58",
-                    "mini": "MuiButton-mini-68",
-                    "raised": "MuiButton-raised-62",
-                    "raisedPrimary": "MuiButton-raisedPrimary-64",
-                    "raisedSecondary": "MuiButton-raisedSecondary-65",
-                    "root": "MuiButton-root-57",
-                    "sizeLarge": "MuiButton-sizeLarge-70",
-                    "sizeSmall": "MuiButton-sizeSmall-69",
-                  }
-                }
-                color="primary"
-                disableFocusRipple={false}
-                disableRipple={false}
-                disabled={false}
-                fullWidth={false}
-                mini={false}
-                onClick={[Function]}
-                size="medium"
-                type="button"
-                variant="raised"
-              >
-                <WithStyles(ButtonBase)
-                  className="MuiButton-root-57 MuiButton-raised-62 MuiButton-raisedPrimary-64 LoginPage-submitButton-0-2-3"
-                  disableRipple={false}
-                  disabled={false}
-                  focusRipple={true}
-                  keyboardFocusedClassName="MuiButton-keyboardFocused-63"
-                  onClick={[Function]}
-                  type="button"
-                >
-                  <ButtonBase
-                    centerRipple={false}
-                    className="MuiButton-root-57 MuiButton-raised-62 MuiButton-raisedPrimary-64 LoginPage-submitButton-0-2-3"
-                    classes={
-                      Object {
-                        "disabled": "MuiButtonBase-disabled-73",
-                        "root": "MuiButtonBase-root-72",
-                      }
-                    }
-                    disableRipple={false}
-                    disabled={false}
-                    focusRipple={true}
-                    keyboardFocusedClassName="MuiButton-keyboardFocused-63"
+                              className="MuiButton-label-58"
+                            >
+                              Forgot password?
+                            </span>
+                            <WithStyles(TouchRipple)
+                              center={false}
+                              innerRef={[Function]}
+                            >
+                              <TouchRipple
+                                center={false}
+                                classes={
+                                  Object {
+                                    "ripple": "MuiTouchRipple-ripple-78",
+                                    "rippleFast": "MuiTouchRipple-rippleFast-80",
+                                    "rippleVisible": "MuiTouchRipple-rippleVisible-79",
+                                    "root": "MuiTouchRipple-root-74",
+                                    "wrapper": "MuiTouchRipple-wrapper-75",
+                                    "wrapperLeaving": "MuiTouchRipple-wrapperLeaving-76",
+                                    "wrapperPulsating": "MuiTouchRipple-wrapperPulsating-77",
+                                  }
+                                }
+                              >
+                                <TransitionGroup
+                                  childFactory={[Function]}
+                                  className="MuiTouchRipple-root-74"
+                                  component="span"
+                                  enter={true}
+                                  exit={true}
+                                >
+                                  <span
+                                    className="MuiTouchRipple-root-74"
+                                  />
+                                </TransitionGroup>
+                              </TouchRipple>
+                            </WithStyles(TouchRipple)>
+                          </button>
+                        </ButtonBase>
+                      </WithStyles(ButtonBase)>
+                    </Button>
+                  </WithStyles(Button)>
+                  <WithStyles(Button)
+                    className="LoginPage-submitButton-0-2-3"
+                    color="primary"
                     onClick={[Function]}
-                    tabIndex={0}
-                    type="button"
+                    variant="raised"
                   >
-                    <button
-                      className="MuiButtonBase-root-72 MuiButton-root-57 MuiButton-raised-62 MuiButton-raisedPrimary-64 LoginPage-submitButton-0-2-3"
+                    <Button
+                      className="LoginPage-submitButton-0-2-3"
+                      classes={
+                        Object {
+                          "colorInherit": "MuiButton-colorInherit-61",
+                          "disabled": "MuiButton-disabled-66",
+                          "fab": "MuiButton-fab-67",
+                          "flatPrimary": "MuiButton-flatPrimary-59",
+                          "flatSecondary": "MuiButton-flatSecondary-60",
+                          "fullWidth": "MuiButton-fullWidth-71",
+                          "keyboardFocused": "MuiButton-keyboardFocused-63",
+                          "label": "MuiButton-label-58",
+                          "mini": "MuiButton-mini-68",
+                          "raised": "MuiButton-raised-62",
+                          "raisedPrimary": "MuiButton-raisedPrimary-64",
+                          "raisedSecondary": "MuiButton-raisedSecondary-65",
+                          "root": "MuiButton-root-57",
+                          "sizeLarge": "MuiButton-sizeLarge-70",
+                          "sizeSmall": "MuiButton-sizeSmall-69",
+                        }
+                      }
+                      color="primary"
+                      disableFocusRipple={false}
+                      disableRipple={false}
                       disabled={false}
-                      onBlur={[Function]}
+                      fullWidth={false}
+                      mini={false}
                       onClick={[Function]}
-                      onFocus={[Function]}
-                      onKeyDown={[Function]}
-                      onKeyUp={[Function]}
-                      onMouseDown={[Function]}
-                      onMouseLeave={[Function]}
-                      onMouseUp={[Function]}
-                      onTouchEnd={[Function]}
-                      onTouchMove={[Function]}
-                      onTouchStart={[Function]}
-                      tabIndex={0}
+                      size="medium"
                       type="button"
+                      variant="raised"
                     >
-                      <span
-                        className="MuiButton-label-58"
+                      <WithStyles(ButtonBase)
+                        className="MuiButton-root-57 MuiButton-raised-62 MuiButton-raisedPrimary-64 LoginPage-submitButton-0-2-3"
+                        disableRipple={false}
+                        disabled={false}
+                        focusRipple={true}
+                        keyboardFocusedClassName="MuiButton-keyboardFocused-63"
+                        onClick={[Function]}
+                        type="button"
                       >
-                        Login
-                      </span>
-                      <WithStyles(TouchRipple)
-                        center={false}
-                        innerRef={[Function]}
-                      >
-                        <TouchRipple
-                          center={false}
+                        <ButtonBase
+                          centerRipple={false}
+                          className="MuiButton-root-57 MuiButton-raised-62 MuiButton-raisedPrimary-64 LoginPage-submitButton-0-2-3"
                           classes={
                             Object {
-                              "ripple": "MuiTouchRipple-ripple-78",
-                              "rippleFast": "MuiTouchRipple-rippleFast-80",
-                              "rippleVisible": "MuiTouchRipple-rippleVisible-79",
-                              "root": "MuiTouchRipple-root-74",
-                              "wrapper": "MuiTouchRipple-wrapper-75",
-                              "wrapperLeaving": "MuiTouchRipple-wrapperLeaving-76",
-                              "wrapperPulsating": "MuiTouchRipple-wrapperPulsating-77",
+                              "disabled": "MuiButtonBase-disabled-73",
+                              "root": "MuiButtonBase-root-72",
                             }
                           }
+                          disableRipple={false}
+                          disabled={false}
+                          focusRipple={true}
+                          keyboardFocusedClassName="MuiButton-keyboardFocused-63"
+                          onClick={[Function]}
+                          tabIndex={0}
+                          type="button"
                         >
-                          <TransitionGroup
-                            childFactory={[Function]}
-                            className="MuiTouchRipple-root-74"
-                            component="span"
-                            enter={true}
-                            exit={true}
+                          <button
+                            className="MuiButtonBase-root-72 MuiButton-root-57 MuiButton-raised-62 MuiButton-raisedPrimary-64 LoginPage-submitButton-0-2-3"
+                            disabled={false}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseLeave={[Function]}
+                            onMouseUp={[Function]}
+                            onTouchEnd={[Function]}
+                            onTouchMove={[Function]}
+                            onTouchStart={[Function]}
+                            tabIndex={0}
+                            type="button"
                           >
                             <span
-                              className="MuiTouchRipple-root-74"
-                            />
-                          </TransitionGroup>
-                        </TouchRipple>
-                      </WithStyles(TouchRipple)>
-                    </button>
-                  </ButtonBase>
-                </WithStyles(ButtonBase)>
-              </Button>
-            </WithStyles(Button)>
-          </div>
-        </div>
-      </Paper>
-    </WithStyles(Paper)>
+                              className="MuiButton-label-58"
+                            >
+                              Login
+                            </span>
+                            <WithStyles(TouchRipple)
+                              center={false}
+                              innerRef={[Function]}
+                            >
+                              <TouchRipple
+                                center={false}
+                                classes={
+                                  Object {
+                                    "ripple": "MuiTouchRipple-ripple-78",
+                                    "rippleFast": "MuiTouchRipple-rippleFast-80",
+                                    "rippleVisible": "MuiTouchRipple-rippleVisible-79",
+                                    "root": "MuiTouchRipple-root-74",
+                                    "wrapper": "MuiTouchRipple-wrapper-75",
+                                    "wrapperLeaving": "MuiTouchRipple-wrapperLeaving-76",
+                                    "wrapperPulsating": "MuiTouchRipple-wrapperPulsating-77",
+                                  }
+                                }
+                              >
+                                <TransitionGroup
+                                  childFactory={[Function]}
+                                  className="MuiTouchRipple-root-74"
+                                  component="span"
+                                  enter={true}
+                                  exit={true}
+                                >
+                                  <span
+                                    className="MuiTouchRipple-root-74"
+                                  />
+                                </TransitionGroup>
+                              </TouchRipple>
+                            </WithStyles(TouchRipple)>
+                          </button>
+                        </ButtonBase>
+                      </WithStyles(ButtonBase)>
+                    </Button>
+                  </WithStyles(Button)>
+                </div>
+              </div>
+            </Paper>
+          </WithStyles(Paper)>
+        </t>
+      </Connect(t)>
+    </t>
   </LoginPage>
 </Jss(LoginPage)>
 `;
