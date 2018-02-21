@@ -575,80 +575,24 @@ exports[`should render correctly 1`] = `
 </Jss(LoginPage)>
 `;
 
-exports[`should render redirect when authorized 1`] = `
-<MemoryRouter>
-  <Router
-    history={
-      Object {
-        "action": "REPLACE",
-        "block": [Function],
-        "canGo": [Function],
-        "createHref": [Function],
-        "entries": Array [
-          Object {
-            "hash": "",
-            "key": "smh6nf",
-            "pathname": "/",
-            "search": "",
-          },
-        ],
-        "go": [Function],
-        "goBack": [Function],
-        "goForward": [Function],
-        "index": 0,
-        "length": 1,
-        "listen": [Function],
-        "location": Object {
-          "hash": "",
-          "key": "smh6nf",
-          "pathname": "/",
-          "search": "",
-        },
-        "push": [Function],
-        "replace": [Function],
-      }
+exports[`should render redirect to "from" when authorized 1`] = `
+<Redirect
+  push={false}
+  to={
+    Object {
+      "pathname": "/test",
     }
-  >
-    <Jss(LoginPage)
-      authorized={true}
-      location={
-        Object {
-          "from": Object {
-            "pathname": "/test",
-          },
-        }
-      }
-      logIn={[Function]}
-    >
-      <LoginPage
-        authorized={true}
-        classes={
-          Object {
-            "footer": "LoginPage-footer-0-2-4",
-            "greeting": "LoginPage-greeting-0-2-1",
-            "input": "LoginPage-input-0-2-2",
-            "submitButton": "LoginPage-submitButton-0-2-3",
-          }
-        }
-        location={
-          Object {
-            "from": Object {
-              "pathname": "/test",
-            },
-          }
-        }
-        logIn={[Function]}
-      >
-        <Redirect
-          push={false}
-          to={
-            Object {
-              "pathname": "/",
-            }
-          }
-        />
-      </LoginPage>
-    </Jss(LoginPage)>
-  </Router>
-</MemoryRouter>
+  }
+/>
+`;
+
+exports[`should render redirect to root when authorized and backward address is set 1`] = `
+<Redirect
+  push={false}
+  to={
+    Object {
+      "pathname": "/",
+    }
+  }
+/>
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { MemoryRouter } from 'react-router-dom';
+import { MemoryRouter, Redirect } from 'react-router-dom';
 import { mount } from 'enzyme';
 import Button from 'material-ui/Button';
 import TextField from 'material-ui/TextField';
@@ -35,16 +35,26 @@ test('should render correctly', () => {
   expect(loginPage).toMatchSnapshot();
 });
 
-test('should render redirect when authorized', () => {
-  const loginPage = mount(
+test('should render redirect to "from" when authorized', () => {
+  const redirect = mount(
     <MemoryRouter>
       <LoginPage
         authorized
-        location={{ from: { pathname: '/test' } }}
+        location={{ state: { from: { pathname: '/test' } } }}
         logIn={() => {}}
       />
     </MemoryRouter>,
-  );
+  ).find(Redirect);
 
-  expect(loginPage).toMatchSnapshot();
+  expect(redirect).toMatchSnapshot();
+});
+
+test('should render redirect to root when authorized and backward address is set', () => {
+  const redirect = mount(
+    <MemoryRouter>
+      <LoginPage authorized location={{}} logIn={() => {}} />
+    </MemoryRouter>,
+  ).find(Redirect);
+
+  expect(redirect).toMatchSnapshot();
 });
