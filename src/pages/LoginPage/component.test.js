@@ -25,3 +25,11 @@ test('should call logIn with login and password', () => {
     password: 'password',
   });
 });
+
+test('should render correctly', () => {
+  const loginPage = mount(
+    <LoginPage authorized={false} location={{}} logIn={() => {}} />,
+  );
+
+  expect(loginPage).toMatchSnapshot();
+});
