@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Redirect, Route } from 'react-router-dom';
+import { Redirect, Route, withRouter } from 'react-router-dom';
 
 const ProtectedRoute = ({ authorized, component: Component, ...rest }) => {
   const renderOrRedirect = props =>
@@ -32,4 +32,5 @@ const mapStateToProps = ({ auth: { authorized } }) => ({
   authorized,
 });
 
-export default connect(mapStateToProps)(ProtectedRoute);
+// https://stackoverflow.com/questions/43520498/react-router-private-routes-redirect-not-working
+export default withRouter(connect(mapStateToProps)(ProtectedRoute));
