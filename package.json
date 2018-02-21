@@ -30,6 +30,9 @@
         "functions": 90,
         "statements": 80
       }
+    },
+    "moduleNameMapper": {
+      "^@/(.*)": "<rootDir>/src/$1.js"
     }
   },
   "dependencies": {
