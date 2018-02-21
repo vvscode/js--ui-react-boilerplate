@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "jest",
+    "test": "jest --coverage",
     "precommit": "lint-staged"
   },
   "lint-staged": {
@@ -23,7 +23,14 @@
     "setupTestFrameworkScriptFile": "<rootDir>src/setupTests.js",
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
-    ]
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 90,
+        "statements": 80
+      }
+    }
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
