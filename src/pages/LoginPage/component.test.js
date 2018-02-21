@@ -6,7 +6,7 @@ import TextField from 'material-ui/TextField';
 
 import LoginPage from './component';
 
-test('should call logIn with login and password', () => {
+test('should call logIn with login and password', done => {
   const logIn = jest.fn();
   const loginPage = mount(
     <LoginPage authorized={false} location={{}} logIn={logIn} />,
@@ -21,9 +21,13 @@ test('should call logIn with login and password', () => {
   passwordInput.props().onChange({ target: { value: 'password' } });
   submitButton.simulate('click');
 
-  expect(logIn).toHaveBeenCalledWith({
-    login: 'login',
-    password: 'password',
+  setImmediate(() => {
+    expect(logIn).toHaveBeenCalledWith({
+      login: 'login',
+      password: 'password',
+    });
+
+    done();
   });
 });
 
