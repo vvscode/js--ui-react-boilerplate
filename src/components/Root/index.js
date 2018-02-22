@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import createStore from '@/redux/createStore';
 import HelloPage from '@/pages/HelloPage';
 import LoginPage from '@/pages/LoginPage';
+import InfoPage from '@/pages/InfoPage';
 import ProtectedRoute from '@/components/ProtectedRoute';
 
 const store = createStore();
@@ -17,6 +18,7 @@ const Root = () => (
         <Fragment>
           <Route path="/login" component={LoginPage} />
           <ProtectedRoute path="/hello" component={HelloPage} />
+          <ProtectedRoute path="/info" component={InfoPage} />
         </Fragment>
       </Router>
     </Provider>
