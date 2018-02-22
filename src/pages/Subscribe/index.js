@@ -1,21 +1,25 @@
 import React from 'react';
-import Stepper, { Step, StepContent, StepLabel } from 'material-ui/Stepper';
+import Stepper, { Step, StepLabel } from 'material-ui/Stepper';
+
+import FirstStep from './FirstStep';
 
 const Subscribe = () => (
-  <Stepper activeStep={0} alternativeLabel>
-    <Step>
-      <StepLabel>Choose plan</StepLabel>
-      <StepContent>111</StepContent>
-    </Step>
-    <Step>
-      <StepLabel>Enter payment details</StepLabel>
-      <StepContent>222</StepContent>
-    </Step>
-    <Step>
-      <StepLabel>Enter contact details</StepLabel>
-      <StepContent>333</StepContent>
-    </Step>
-  </Stepper>
+  <div>
+    <Stepper activeStep={0} alternativeLabel>
+      <Step>
+        <StepLabel>Choose plan</StepLabel>
+      </Step>
+      <Step>
+        <StepLabel>Enter payment details</StepLabel>
+      </Step>
+      <Step>
+        <StepLabel>Enter contact details</StepLabel>
+      </Step>
+    </Stepper>
+    <div>
+      <FirstStep defaultValues={{ plan: 'simple' }} />
+    </div>
+  </div>
 );
 
 export default Subscribe;
