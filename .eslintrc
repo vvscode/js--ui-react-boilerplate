@@ -1,7 +1,6 @@
 {
   "extends": ["@exeto/eslint-config/node", "prettier"],
   "plugins": ["prettier"],
-  "parser": "babel-eslint",
   "rules": {
     "prettier/prettier": "error"
   }

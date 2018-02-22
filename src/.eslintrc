@@ -1,5 +1,6 @@
 {
   "extends": ["@exeto", "@exeto/react", "prettier"],
+  "parser": "babel-eslint",
   "rules": {
     "react/prop-types": [
       "error",

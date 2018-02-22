@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<Jss(PaperSheet)>
+  <PaperSheet
+    classes={
+      Object {
+        "root": "PaperSheet-root-0-1-1",
+      }
+    }
+  >
+    <WithStyles(Paper)
+      className="PaperSheet-root-0-1-1"
+      elevation={4}
+    >
+      <Paper
+        className="PaperSheet-root-0-1-1"
+        classes={
+          Object {
+            "root": "MuiPaper-root-1",
+            "rounded": "MuiPaper-rounded-2",'
+            "shadow0": "MuiPaper-shadow0-3",
+            "shadow1": "MuiPaper-shadow1-4",
+            "shadow10": "MuiPaper-shadow10-13",
+            "shadow11": "MuiPaper-shadow11-14",
+            "shadow12": "MuiPaper-shadow12-15",
+            "shadow13": "MuiPaper-shadow13-16",
+            "shadow14": "MuiPaper-shadow14-17",
+            "shadow15": "MuiPaper-shadow15-18",
+            "shadow16": "MuiPaper-shadow16-19",
+            "shadow17": "MuiPaper-shadow17-20",
+            "shadow18": "MuiPaper-shadow18-21",
+            "shadow19": "MuiPaper-shadow19-22",
+            "shadow2": "MuiPaper-shadow2-5",
+            "shadow20": "MuiPaper-shadow20-23",
+            "shadow21": "MuiPaper-shadow21-24",
+            "shadow22": "MuiPaper-shadow22-25",
+            "shadow23": "MuiPaper-shadow23-26",
+            "shadow24": "MuiPaper-shadow24-27",
+            "shadow3": "MuiPaper-shadow3-6",
+            "shadow4": "MuiPaper-shadow4-7",
+            "shadow5": "MuiPaper-shadow5-8",
+            "shadow6": "MuiPaper-shadow6-9",
+            "shadow7": "MuiPaper-shadow7-10",
+            "shadow8": "MuiPaper-shadow8-11",
+            "shadow9": "MuiPaper-shadow9-12",
+          }
+        }
+        component="div"
+        elevation={4}
+        square={false}
+      >
+        <div
+          className="MuiPaper-root-1 MuiPaper-shadow4-7 MuiPaper-rounded-2 PaperSheet-root-0-1-1"
+        >
+          <WithStyles(Typography)
+            component="h3"
+            variant="headline"
+          >
+            <Typography
+              align="inherit"
+              classes={
+                Object {
+                  "alignCenter": "MuiTypography-alignCenter-41",
+                  "alignJustify": "MuiTypography-alignJustify-43",
+                  "alignLeft": "MuiTypography-alignLeft-40",
+                  "alignRight": "MuiTypography-alignRight-42",
+                  "body1": "MuiTypography-body1-37",
+                  "body2": "MuiTypography-body2-36",
+                  "button": "MuiTypography-button-39",
+                  "caption": "MuiTypography-caption-38",
+                  "colorError": "MuiTypography-colorError-51",
+                  "colorInherit": "MuiTypography-colorInherit-47",
+                  "colorPrimary": "MuiTypography-colorPrimary-48",
+                  "colorSecondary": "MuiTypography-colorSecondary-49",
+                  "colorTextSecondary": "MuiTypography-colorTextSecondary-50",
+                  "display1": "MuiTypography-display1-32",
+                  "display2": "MuiTypography-display2-31",
+                  "display3": "MuiTypography-display3-30",
+                  "display4": "MuiTypography-display4-29",
+                  "gutterBottom": "MuiTypography-gutterBottom-45",
+                  "headline": "MuiTypography-headline-33",
+                  "noWrap": "MuiTypography-noWrap-44",
+                  "paragraph": "MuiTypography-paragraph-46",
+                  "root": "MuiTypography-root-28",
+                  "subheading": "MuiTypography-subheading-35",
+                  "title": "MuiTypography-title-34",
+                }
+              }
+              color="default"
+              component="h3"
+              gutterBottom={false}
+              headlineMapping={
+                Object {
+                  "body1": "p",
+                  "body2": "aside",
+                  "display1": "h1",
+                  "display2": "h1",
+                  "display3": "h1",
+                  "display4": "h1",
+                  "headline": "h1",
+                  "subheading": "h3",
+                  "title": "h2",
+                }
+              }
+              noWrap={false}
+              paragraph={false}
+              variant="headline"
+            >
+              <h3
+                className="MuiTypography-root-28 MuiTypography-headline-33"
+              >
+                UI React boilerplate page with some info
+              </h3>
+            </Typography>
+          </WithStyles(Typography)>
+          <WithStyles(Typography)
+            component="p"
+          >
+            <Typography
+              align="inherit"
+              classes={
+                Object {
+                  "alignCenter": "MuiTypography-alignCenter-41",
+                  "alignJustify": "MuiTypography-alignJustify-43",
+                  "alignLeft": "MuiTypography-alignLeft-40",
+                  "alignRight": "MuiTypography-alignRight-42",
+                  "body1": "MuiTypography-body1-37",
+                  "body2": "MuiTypography-body2-36",
+                  "button": "MuiTypography-button-39",
+                  "caption": "MuiTypography-caption-38",
+                  "colorError": "MuiTypography-colorError-51",
+                  "colorInherit": "MuiTypography-colorInherit-47",
+                  "colorPrimary": "MuiTypography-colorPrimary-48",
+                  "colorSecondary": "MuiTypography-colorSecondary-49",
+                  "colorTextSecondary": "MuiTypography-colorTextSecondary-50",
+                  "display1": "MuiTypography-display1-32",
+                  "display2": "MuiTypography-display2-31",
+                  "display3": "MuiTypography-display3-30",
+                  "display4": "MuiTypography-display4-29",
+                  "gutterBottom": "MuiTypography-gutterBottom-45",
+                  "headline": "MuiTypography-headline-33",
+                  "noWrap": "MuiTypography-noWrap-44",
+                  "paragraph": "MuiTypography-paragraph-46",
+                  "root": "MuiTypography-root-28",
+                  "subheading": "MuiTypography-subheading-35",
+                  "title": "MuiTypography-title-34",
+                }
+              }
+              color="default"
+              component="p"
+              gutterBottom={false}
+              headlineMapping={
+                Object {
+                  "body1": "p",
+                  "body2": "aside",
+                  "display1": "h1",
+                  "display2": "h1",
+                  "display3": "h1",
+                  "display4": "h1",
+                  "headline": "h1",
+                  "subheading": "h3",
+                  "title": "h2",
+                }
+              }
+              noWrap={false}
+              paragraph={false}
+              variant="body1"
+            >
+              <p
+                className="MuiTypography-root-28 MuiTypography-body1-37"
+              >
+                Shut up and give your money!
+              </p>
+            </Typography>
+          </WithStyles(Typography)>
+        </div>
+      </Paper>
+    </WithStyles(Paper)>
+  </PaperSheet>
+</Jss(PaperSheet)>
+`;
