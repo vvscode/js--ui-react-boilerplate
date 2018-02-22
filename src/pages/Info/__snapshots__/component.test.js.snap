@@ -18,7 +18,7 @@ exports[`should render correctly 1`] = `
         classes={
           Object {
             "root": "MuiPaper-root-1",
-            "rounded": "MuiPaper-rounded-2",'
+            "rounded": "MuiPaper-rounded-2",
             "shadow0": "MuiPaper-shadow0-3",
             "shadow1": "MuiPaper-shadow1-4",
             "shadow10": "MuiPaper-shadow10-13",
