@@ -33,7 +33,12 @@ class Subscribe extends Component {
         <Form
           validateOnSubmit
           dontValidateOnMount
-          defaultValues={{ plan: 'standard', cardNumber: '' }}
+          defaultValues={{
+            plan: 'standard',
+            cardNumber: '',
+            expirationDate: '',
+            cvv: '',
+          }}
         >
           {formApi => this.renderStep(activeStep, formApi)}
         </Form>

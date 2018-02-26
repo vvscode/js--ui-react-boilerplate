@@ -3,11 +3,23 @@ import PropTypes from 'prop-types';
 import { Form } from 'react-form';
 import Button from 'material-ui/Button';
 
+import CardNumberFormat from '@/components/CardNumberFormat';
+import CVVFormat from '@/components/CVVFormat';
+import ExpirationDateFormat from '@/components/ExpirationDateFormat';
 import FormInput from '@/components/FormInput';
+import {
+  isValidCardNumber,
+  isValidExpirationDate,
+  isValidCVV,
+} from '@/utils/format';
 import { createValidator } from '@/utils/validate';
 
 const validator = createValidator({
-  cardNumber: value => (value ? null : 'Invalid card number'),
+  cardNumber: value =>
+    isValidCardNumber(value) ? null : 'Invalid card number',
+  expirationDate: value =>
+    isValidExpirationDate(value) ? null : 'Invalid expiration date',
+  cvv: value => (isValidCVV(value) ? null : 'Invalid CVV'),
 });
 
 const FirstStep = props => (
@@ -21,8 +33,12 @@ const FirstStep = props => (
     {formApi => {
       const formState = formApi.getFormState();
       const {
-        values: { cardNumber },
-        errors: { cardNumber: cardNumberError },
+        values: { cardNumber, expirationDate, cvv },
+        errors: {
+          cardNumber: cardNumberError,
+          expirationDate: expirationDateError,
+          cvv: cvvError,
+        },
       } = formState;
 
       return (
@@ -31,9 +47,26 @@ const FirstStep = props => (
             error={cardNumberError}
             value={cardNumber}
             placeholder={'Card Number'}
+            inputComponent={CardNumberFormat}
             onChange={event =>
               formApi.setValue('cardNumber', event.target.value)
             }
+          />
+          <FormInput
+            error={expirationDateError}
+            value={expirationDate}
+            placeholder={'Expiration Date'}
+            inputComponent={ExpirationDateFormat}
+            onChange={event =>
+              formApi.setValue('expirationDate', event.target.value)
+            }
+          />
+          <FormInput
+            error={cvvError}
+            value={cvv}
+            placeholder={'CVV'}
+            inputComponent={CVVFormat}
+            onChange={event => formApi.setValue('cvv', event.target.value)}
           />
           <Button
             variant="raised"
