@@ -2,7 +2,6 @@ import React from 'react';
 import { mount } from 'enzyme';
 
 import ThirdStep from './component';
-import FormInput from '@/components/FormInput/index';
 import Button from 'material-ui/Button';
 
 test('should render correctly', () => {
@@ -17,18 +16,23 @@ test('should handled correctly', done => {
   const component = mount(
     <ThirdStep defaultValues={{}} submit={handleSubmit} />,
   );
-
-  const inputs = component.find(FormInput);
-  const usernameInput = inputs.at(0);
-  const nameInput = inputs.at(1);
-  const emailInput = inputs.at(2);
-  const detailsInput = inputs.at(3);
-  const submitButton = component.find(Button).at(0);
+  const usernameInput = component.find('.q-username input').at(0);
 
   usernameInput.props().onChange({ target: { value: 'foo' } });
+
+  const nameInput = component.find('.q-name input').at(0);
+
   nameInput.props().onChange({ target: { value: 'bar' } });
+
+  const emailInput = component.find('.q-email input').at(0);
+
   emailInput.props().onChange({ target: { value: 'aaaa@aaaa.com' } });
+
+  const detailsInput = component.find('.q-details textarea[type="text"]').at(0);
+
   detailsInput.props().onChange({ target: { value: 'lorem ipsum' } });
+
+  const submitButton = component.find(Button).at(0);
 
   submitButton.simulate('click');
 
