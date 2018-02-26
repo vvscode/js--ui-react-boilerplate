@@ -17,9 +17,7 @@ class Subscribe extends Component {
     }));
   };
 
-  submitForm = () => {
-    alert('aaaaa');
-  };
+  submitForm = () => {};
 
   render() {
     const { activeStep } = this.state;

@@ -6,6 +6,4 @@ export const isValidExpirationDate = value =>
 
 export const isValidCVV = value => /^\d{3}$/.test(value);
 
-export const isValidUsername = value => /^\d{3}$/.test(value);
-
 export const isValidEmail = value => /(.+)@(.+){2,}\.(.+){2,}/.test(value);
