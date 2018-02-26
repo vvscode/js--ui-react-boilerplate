@@ -5,8 +5,17 @@ import ThirdStep from './component';
 import FormInput from '@/components/FormInput/index';
 import Button from 'material-ui/Button';
 
+const defaultValues = {
+  username: '',
+  name: '',
+  email: '',
+  details: '',
+};
+
 test('should render correctly', () => {
-  const component = mount(<ThirdStep defaultValues={{}} submit={() => {}} />);
+  const component = mount(
+    <ThirdStep defaultValues={defaultValues} submit={() => {}} />,
+  );
 
   expect(component).toMatchSnapshot();
 });
@@ -15,7 +24,7 @@ test('should handled correctly', done => {
   const handleSubmit = jest.fn();
 
   const component = mount(
-    <ThirdStep defaultValues={{}} submit={handleSubmit} />,
+    <ThirdStep defaultValues={defaultValues} submit={handleSubmit} />,
   );
 
   const inputs = component.find(FormInput);

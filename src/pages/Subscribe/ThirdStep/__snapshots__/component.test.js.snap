@@ -2,18 +2,39 @@
 
 exports[`should render correctly 1`] = `
 <ThirdStep
-  defaultValues={Object {}}
+  defaultValues={
+    Object {
+      "details": "",
+      "email": "",
+      "name": "",
+      "username": "",
+    }
+  }
   submit={[Function]}
 >
   <t
-    defaultValues={Object {}}
+    defaultValues={
+      Object {
+        "details": "",
+        "email": "",
+        "name": "",
+        "username": "",
+      }
+    }
     dontValidateOnMount={true}
     onSubmit={[Function]}
     validateError={[Function]}
     validateOnSubmit={true}
   >
     <Connect(t)
-      defaultValues={Object {}}
+      defaultValues={
+        Object {
+          "details": "",
+          "email": "",
+          "name": "",
+          "username": "",
+        }
+      }
       dontValidateOnMount={true}
       onSubmit={[Function]}
       store={
@@ -29,7 +50,14 @@ exports[`should render correctly 1`] = `
       validateOnSubmit={true}
     >
       <t
-        defaultValues={Object {}}
+        defaultValues={
+          Object {
+            "details": "",
+            "email": "",
+            "name": "",
+            "username": "",
+          }
+        }
         dispatch={[Function]}
         dontValidateOnMount={true}
         formState={
@@ -47,7 +75,12 @@ exports[`should render correctly 1`] = `
             "validating": Object {},
             "validationFailed": Object {},
             "validationFailures": 0,
-            "values": Object {},
+            "values": Object {
+              "details": "",
+              "email": "",
+              "name": "",
+              "username": "",
+            },
             "warnings": Object {},
           }
         }
@@ -89,6 +122,7 @@ exports[`should render correctly 1`] = `
           error=""
           onChange={[Function]}
           placeholder="User name"
+          value=""
         >
           <WithStyles(FormControl)
             error={false}
@@ -166,6 +200,7 @@ exports[`should render correctly 1`] = `
                   className="q-username"
                   id="name-error"
                   onChange={[Function]}
+                  value=""
                 >
                   <Input
                     className="q-username"
@@ -194,6 +229,7 @@ exports[`should render correctly 1`] = `
                     multiline={false}
                     onChange={[Function]}
                     type="text"
+                    value=""
                   >
                     <div
                       className="MuiInput-root-15 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21 q-username"
@@ -208,6 +244,7 @@ exports[`should render correctly 1`] = `
                         id="name-error"
                         onChange={[Function]}
                         type="text"
+                        value=""
                       />
                     </div>
                   </Input>
@@ -242,6 +279,7 @@ exports[`should render correctly 1`] = `
           error=""
           onChange={[Function]}
           placeholder="Name"
+          value=""
         >
           <WithStyles(FormControl)
             error={false}
@@ -319,6 +357,7 @@ exports[`should render correctly 1`] = `
                   className="q-name"
                   id="name-error"
                   onChange={[Function]}
+                  value=""
                 >
                   <Input
                     className="q-name"
@@ -347,6 +386,7 @@ exports[`should render correctly 1`] = `
                     multiline={false}
                     onChange={[Function]}
                     type="text"
+                    value=""
                   >
                     <div
                       className="MuiInput-root-15 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21 q-name"
@@ -361,6 +401,7 @@ exports[`should render correctly 1`] = `
                         id="name-error"
                         onChange={[Function]}
                         type="text"
+                        value=""
                       />
                     </div>
                   </Input>
@@ -395,6 +436,7 @@ exports[`should render correctly 1`] = `
           error=""
           onChange={[Function]}
           placeholder="Email"
+          value=""
         >
           <WithStyles(FormControl)
             error={false}
@@ -472,6 +514,7 @@ exports[`should render correctly 1`] = `
                   className="q-email"
                   id="name-error"
                   onChange={[Function]}
+                  value=""
                 >
                   <Input
                     className="q-email"
@@ -500,6 +543,7 @@ exports[`should render correctly 1`] = `
                     multiline={false}
                     onChange={[Function]}
                     type="text"
+                    value=""
                   >
                     <div
                       className="MuiInput-root-15 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21 q-email"
@@ -514,6 +558,7 @@ exports[`should render correctly 1`] = `
                         id="name-error"
                         onChange={[Function]}
                         type="text"
+                        value=""
                       />
                     </div>
                   </Input>
@@ -549,6 +594,7 @@ exports[`should render correctly 1`] = `
           multiline={true}
           onChange={[Function]}
           placeholder="Details"
+          value=""
         >
           <WithStyles(FormControl)
             error={false}
@@ -627,6 +673,7 @@ exports[`should render correctly 1`] = `
                   id="name-error"
                   multiline={true}
                   onChange={[Function]}
+                  value=""
                 >
                   <Input
                     className="q-details"
@@ -655,6 +702,7 @@ exports[`should render correctly 1`] = `
                     multiline={true}
                     onChange={[Function]}
                     type="text"
+                    value=""
                   >
                     <div
                       className="MuiInput-root-15 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-multiline-22 MuiInput-underline-21 q-details"
@@ -670,6 +718,7 @@ exports[`should render correctly 1`] = `
                         onChange={[Function]}
                         textareaRef={[Function]}
                         type="text"
+                        value=""
                       >
                         <Textarea
                           aria-invalid={false}
@@ -688,6 +737,7 @@ exports[`should render correctly 1`] = `
                           rows={1}
                           textareaRef={[Function]}
                           type="text"
+                          value=""
                         >
                           <div
                             className="MuiTextarea-root-34"
@@ -715,6 +765,7 @@ exports[`should render correctly 1`] = `
                               readOnly={true}
                               rows={1}
                               tabIndex={-1}
+                              value=""
                             />
                             <textarea
                               aria-invalid={false}
@@ -725,6 +776,7 @@ exports[`should render correctly 1`] = `
                               onChange={[Function]}
                               rows={1}
                               type="text"
+                              value=""
                             />
                           </div>
                         </Textarea>

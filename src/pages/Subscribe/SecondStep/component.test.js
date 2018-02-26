@@ -5,11 +5,17 @@ import SecondStep from './component';
 import FormInput from '@/components/FormInput/index';
 import Button from 'material-ui/Button';
 
+const defaultValues = {
+  cardNumber: '',
+  expirationDate: '',
+  cvv: '',
+};
+
 test('should call submit if form is valid', done => {
   const handleSubmit = jest.fn();
 
   const component = mount(
-    <SecondStep defaultValues={{}} submit={handleSubmit} />,
+    <SecondStep defaultValues={defaultValues} submit={handleSubmit} />,
   );
   const cardNumber = '1111 2222 3333 4444';
   const expirationDate = '10/18';
@@ -41,7 +47,7 @@ test('should not call submit if any field is invalid', done => {
   const handleSubmit = jest.fn();
 
   const component = mount(
-    <SecondStep defaultValues={{}} submit={handleSubmit} />,
+    <SecondStep defaultValues={defaultValues} submit={handleSubmit} />,
   );
   const invalidCardNumber = '1111 2222 3333 444a';
   const invalidExpirationDate = '10/18a';

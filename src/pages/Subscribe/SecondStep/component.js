@@ -84,6 +84,8 @@ const SecondStep = props => (
 SecondStep.propTypes = {
   defaultValues: PropTypes.shape({
     cardNumber: PropTypes.string,
+    expirationDate: PropTypes.string,
+    cvv: PropTypes.string,
   }).isRequired,
   submit: PropTypes.func.isRequired,
 };
