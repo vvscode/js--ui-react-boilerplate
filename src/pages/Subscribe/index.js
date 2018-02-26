@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { Form } from 'react-form';
 import Stepper, { Step, StepLabel } from 'material-ui/Stepper';
 
 import FirstStep from './FirstStep';
+import SecondStep from './SecondStep';
 
 class Subscribe extends Component {
   state = {
@@ -28,20 +30,30 @@ class Subscribe extends Component {
             <StepLabel>Enter contact details</StepLabel>
           </Step>
         </Stepper>
-        <div>{this.renderStep(activeStep)}</div>
+        <Form
+          validateOnSubmit
+          dontValidateOnMount
+          defaultValues={{ plan: 'standard', cardNumber: '' }}
+        >
+          {formApi => this.renderStep(activeStep, formApi)}
+        </Form>
       </div>
     );
   }
 
-  renderStep(activeStep) {
+  renderStep(activeStep, formApi) {
+    const formState = formApi.getFormState();
+    const { values } = formState;
+
     if (activeStep === 0) {
-      return (
-        <FirstStep
-          defaultValues={{ plan: 'simple' }}
-          openNext={this.openNext}
-        />
-      );
+      const { plan } = values;
+
+      return <FirstStep defaultValues={{ plan }} openNext={this.openNext} />;
+    } else if (activeStep === 1) {
+      return <SecondStep defaultValues={{}} openNext={this.openNext} />;
     }
+
+    return null;
   }
 }
 
