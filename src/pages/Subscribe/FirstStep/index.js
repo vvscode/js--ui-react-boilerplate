@@ -40,7 +40,7 @@ const FirstStep = props => (
           <Button
             variant="raised"
             color="primary"
-            onClick={() => props.openNext()}
+            onClick={() => props.submit()}
           >
             Next Step
           </Button>
@@ -54,7 +54,7 @@ FirstStep.propTypes = {
   defaultValues: PropTypes.shape({
     plan: PropTypes.string,
   }).isRequired,
-  openNext: PropTypes.func.isRequired,
+  submit: PropTypes.func.isRequired,
 };
 
 export default FirstStep;

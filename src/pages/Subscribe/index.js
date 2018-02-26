@@ -4,6 +4,7 @@ import Stepper, { Step, StepLabel } from 'material-ui/Stepper';
 
 import FirstStep from './FirstStep';
 import SecondStep from './SecondStep';
+import ThirdStep from './ThirdStep';
 
 class Subscribe extends Component {
   state = {
@@ -11,8 +12,12 @@ class Subscribe extends Component {
   };
 
   openNext = () => {
-    this.setState(prevState => ({ activeStep: prevState.activeStep + 1 }));
+    this.setState(prevState => ({
+      activeStep: Math.max(prevState.activeStep + 1, 0),
+    }));
   };
+
+  submitForm = () => {};
 
   render() {
     const { activeStep } = this.state;
@@ -53,9 +58,11 @@ class Subscribe extends Component {
     if (activeStep === 0) {
       const { plan } = values;
 
-      return <FirstStep defaultValues={{ plan }} openNext={this.openNext} />;
+      return <FirstStep defaultValues={{ plan }} submit={this.openNext} />;
     } else if (activeStep === 1) {
-      return <SecondStep defaultValues={{}} openNext={this.openNext} />;
+      return <SecondStep defaultValues={{}} submit={this.openNext} />;
+    } else if (activeStep === 2) {
+      return <ThirdStep defaultValues={{}} submit={this.submitForm} />;
     }
 
     return null;
