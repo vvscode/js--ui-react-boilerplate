@@ -28,7 +28,7 @@ const FirstStep = props => (
     dontValidateOnMount
     validateError={validator}
     defaultValues={props.defaultValues}
-    onSubmit={() => props.openNext()}
+    onSubmit={() => props.submit()}
   >
     {formApi => {
       const formState = formApi.getFormState();
@@ -85,7 +85,7 @@ FirstStep.propTypes = {
   defaultValues: PropTypes.shape({
     cardNumber: PropTypes.string,
   }).isRequired,
-  openNext: PropTypes.func.isRequired,
+  submit: PropTypes.func.isRequired,
 };
 
 export default FirstStep;
