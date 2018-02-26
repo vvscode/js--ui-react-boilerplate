@@ -1,3 +1,3 @@
-import SecondStep from './';
+import SecondStep from './component';
 
 export default SecondStep;
