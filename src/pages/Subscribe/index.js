@@ -43,6 +43,10 @@ class Subscribe extends Component {
             cardNumber: '',
             expirationDate: '',
             cvv: '',
+            username: '',
+            name: '',
+            email: '',
+            details: '',
           }}
         >
           {formApi => this.renderStep(activeStep, formApi)}
@@ -56,13 +60,35 @@ class Subscribe extends Component {
     const { values } = formState;
 
     if (activeStep === 0) {
-      const { plan } = values;
-
-      return <FirstStep defaultValues={{ plan }} submit={this.openNext} />;
+      return (
+        <FirstStep
+          defaultValues={values}
+          submit={props => {
+            formApi.setAllValues(props);
+            this.openNext();
+          }}
+        />
+      );
     } else if (activeStep === 1) {
-      return <SecondStep defaultValues={{}} submit={this.openNext} />;
+      return (
+        <SecondStep
+          defaultValues={values}
+          submit={props => {
+            formApi.setAllValues(props);
+            this.openNext();
+          }}
+        />
+      );
     } else if (activeStep === 2) {
-      return <ThirdStep defaultValues={{}} submit={this.submitForm} />;
+      return (
+        <ThirdStep
+          defaultValues={values}
+          submit={props => {
+            formApi.setAllValues(props);
+            this.submitForm();
+          }}
+        />
+      );
     }
 
     return null;
