@@ -37,28 +37,24 @@ const ThirdStep = props => (
       return (
         <Fragment>
           <FormInput
-            className={'q-username'}
             error={usernameError}
             value={username}
             placeholder={'User name'}
             onChange={event => formApi.setValue('username', event.target.value)}
           />
           <FormInput
-            className={'q-name'}
             error={nameError}
             value={name}
             placeholder={'Name'}
             onChange={event => formApi.setValue('name', event.target.value)}
           />
           <FormInput
-            className={'q-email'}
             error={emailError}
             value={email}
             placeholder={'Email'}
             onChange={event => formApi.setValue('email', event.target.value)}
           />
           <FormInput
-            className={'q-details'}
             error={detailsError}
             value={details}
             placeholder={'Details'}
@@ -66,7 +62,6 @@ const ThirdStep = props => (
             onChange={event => formApi.setValue('details', event.target.value)}
           />
           <Button
-            className={'q-submit-button'}
             variant="raised"
             color="primary"
             onClick={() => formApi.submitForm()}
