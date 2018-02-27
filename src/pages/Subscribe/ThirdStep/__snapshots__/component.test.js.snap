@@ -870,7 +870,7 @@ exports[`should render correctly 1`] = `
                 focusRipple={true}
                 keyboardFocusedClassName="MuiButton-keyboardFocused-43"
                 onClick={[Function]}
-                tabIndex="0"
+                tabIndex={0}
                 type="button"
               >
                 <button
@@ -887,7 +887,7 @@ exports[`should render correctly 1`] = `
                   onTouchEnd={[Function]}
                   onTouchMove={[Function]}
                   onTouchStart={[Function]}
-                  tabIndex="0"
+                  tabIndex={0}
                   type="button"
                 >
                   <span
