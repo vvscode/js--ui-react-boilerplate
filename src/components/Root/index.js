@@ -1,17 +1,16 @@
 import React, { Fragment } from 'react';
 import { AppContainer } from 'react-hot-loader';
+import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import createStore from '@/redux/createStore';
 import Hello from '@/pages/Hello';
 import Login from '@/pages/Login';
 import Subscribe from '@/pages/Subscribe';
+import Info from '@/pages/Info';
 import ProtectedRoute from '@/components/ProtectedRoute';
 
-const store = createStore();
-
-const Root = () => (
+const Root = ({ store }) => (
   <AppContainer>
     <Provider store={store}>
       <Router>
@@ -19,10 +18,15 @@ const Root = () => (
           <Route path="/subscribe" component={Subscribe} />
           <Route path="/login" component={Login} />
           <ProtectedRoute path="/hello" component={Hello} />
+          <ProtectedRoute path="/info" component={Info} />
         </Fragment>
       </Router>
     </Provider>
   </AppContainer>
 );
+
+Root.propTypes = {
+  store: PropTypes.object.isRequired,
+};
 
 export default Root;
