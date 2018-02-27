@@ -56,7 +56,7 @@ test('should be failed cause of validation error', done => {
   const handleSubmit = jest.fn();
 
   const component = mount(
-    <ThirdStep defaultValues={{}} submit={handleSubmit} />,
+    <ThirdStep defaultValues={defaultValues} submit={handleSubmit} />,
   );
 
   const inputs = component.find(FormInput);
