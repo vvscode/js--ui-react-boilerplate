@@ -51,3 +51,25 @@ test('should handled correctly', done => {
     done();
   });
 });
+
+test('should be failed cause of validation error', done => {
+  const handleSubmit = jest.fn();
+
+  const component = mount(
+    <ThirdStep defaultValues={{}} submit={handleSubmit} />,
+  );
+
+  const inputs = component.find(FormInput);
+  const emailInput = inputs.at(2);
+
+  emailInput.props().onChange({ target: { value: 'aaaa@aaaa' } });
+
+  const submitButton = component.find(Button).at(0);
+
+  submitButton.simulate('click');
+
+  setImmediate(() => {
+    expect(handleSubmit).toHaveBeenCalledTimes(0);
+    done();
+  });
+});
