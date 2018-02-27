@@ -118,7 +118,6 @@ exports[`should render correctly 1`] = `
         validateOnSubmit={true}
       >
         <FormInput
-          className="q-username"
           error=""
           onChange={[Function]}
           placeholder="User name"
@@ -197,13 +196,11 @@ exports[`should render correctly 1`] = `
                   </InputLabel>
                 </WithStyles(InputLabel)>
                 <WithStyles(Input)
-                  className="q-username"
                   id="name-error"
                   onChange={[Function]}
                   value=""
                 >
                   <Input
-                    className="q-username"
                     classes={
                       Object {
                         "disabled": "MuiInput-disabled-20",
@@ -232,7 +229,7 @@ exports[`should render correctly 1`] = `
                     value=""
                   >
                     <div
-                      className="MuiInput-root-15 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21 q-username"
+                      className="MuiInput-root-15 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
                       onBlur={[Function]}
                       onFocus={[Function]}
                     >
@@ -275,7 +272,6 @@ exports[`should render correctly 1`] = `
           </WithStyles(FormControl)>
         </FormInput>
         <FormInput
-          className="q-name"
           error=""
           onChange={[Function]}
           placeholder="Name"
@@ -354,13 +350,11 @@ exports[`should render correctly 1`] = `
                   </InputLabel>
                 </WithStyles(InputLabel)>
                 <WithStyles(Input)
-                  className="q-name"
                   id="name-error"
                   onChange={[Function]}
                   value=""
                 >
                   <Input
-                    className="q-name"
                     classes={
                       Object {
                         "disabled": "MuiInput-disabled-20",
@@ -389,7 +383,7 @@ exports[`should render correctly 1`] = `
                     value=""
                   >
                     <div
-                      className="MuiInput-root-15 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21 q-name"
+                      className="MuiInput-root-15 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
                       onBlur={[Function]}
                       onFocus={[Function]}
                     >
@@ -432,7 +426,6 @@ exports[`should render correctly 1`] = `
           </WithStyles(FormControl)>
         </FormInput>
         <FormInput
-          className="q-email"
           error=""
           onChange={[Function]}
           placeholder="Email"
@@ -511,13 +504,11 @@ exports[`should render correctly 1`] = `
                   </InputLabel>
                 </WithStyles(InputLabel)>
                 <WithStyles(Input)
-                  className="q-email"
                   id="name-error"
                   onChange={[Function]}
                   value=""
                 >
                   <Input
-                    className="q-email"
                     classes={
                       Object {
                         "disabled": "MuiInput-disabled-20",
@@ -546,7 +537,7 @@ exports[`should render correctly 1`] = `
                     value=""
                   >
                     <div
-                      className="MuiInput-root-15 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21 q-email"
+                      className="MuiInput-root-15 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
                       onBlur={[Function]}
                       onFocus={[Function]}
                     >
@@ -589,7 +580,6 @@ exports[`should render correctly 1`] = `
           </WithStyles(FormControl)>
         </FormInput>
         <FormInput
-          className="q-details"
           error=""
           multiline={true}
           onChange={[Function]}
@@ -669,14 +659,12 @@ exports[`should render correctly 1`] = `
                   </InputLabel>
                 </WithStyles(InputLabel)>
                 <WithStyles(Input)
-                  className="q-details"
                   id="name-error"
                   multiline={true}
                   onChange={[Function]}
                   value=""
                 >
                   <Input
-                    className="q-details"
                     classes={
                       Object {
                         "disabled": "MuiInput-disabled-20",
@@ -705,7 +693,7 @@ exports[`should render correctly 1`] = `
                     value=""
                   >
                     <div
-                      className="MuiInput-root-15 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-multiline-22 MuiInput-underline-21 q-details"
+                      className="MuiInput-root-15 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-multiline-22 MuiInput-underline-21"
                       onBlur={[Function]}
                       onFocus={[Function]}
                     >
@@ -810,13 +798,11 @@ exports[`should render correctly 1`] = `
           </WithStyles(FormControl)>
         </FormInput>
         <WithStyles(Button)
-          className="q-submit-button"
           color="primary"
           onClick={[Function]}
           variant="raised"
         >
           <Button
-            className="q-submit-button"
             classes={
               Object {
                 "colorInherit": "MuiButton-colorInherit-41",
@@ -848,7 +834,7 @@ exports[`should render correctly 1`] = `
             variant="raised"
           >
             <WithStyles(ButtonBase)
-              className="MuiButton-root-37 MuiButton-raised-42 MuiButton-raisedPrimary-44 q-submit-button"
+              className="MuiButton-root-37 MuiButton-raised-42 MuiButton-raisedPrimary-44"
               disableRipple={false}
               disabled={false}
               focusRipple={true}
@@ -858,7 +844,7 @@ exports[`should render correctly 1`] = `
             >
               <ButtonBase
                 centerRipple={false}
-                className="MuiButton-root-37 MuiButton-raised-42 MuiButton-raisedPrimary-44 q-submit-button"
+                className="MuiButton-root-37 MuiButton-raised-42 MuiButton-raisedPrimary-44"
                 classes={
                   Object {
                     "disabled": "MuiButtonBase-disabled-53",
@@ -874,7 +860,7 @@ exports[`should render correctly 1`] = `
                 type="button"
               >
                 <button
-                  className="MuiButtonBase-root-52 MuiButton-root-37 MuiButton-raised-42 MuiButton-raisedPrimary-44 q-submit-button"
+                  className="MuiButtonBase-root-52 MuiButton-root-37 MuiButton-raised-42 MuiButton-raisedPrimary-44"
                   disabled={false}
                   onBlur={[Function]}
                   onClick={[Function]}
