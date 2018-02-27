@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Hello from '@/pages/Hello';
 import Login from '@/pages/Login';
+import Subscribe from '@/pages/Subscribe';
 import Info from '@/pages/Info';
 import ProtectedRoute from '@/components/ProtectedRoute';
 
@@ -14,6 +15,7 @@ const Root = ({ store }) => (
     <Provider store={store}>
       <Router>
         <Fragment>
+          <Route path="/subscribe" component={Subscribe} />
           <Route path="/login" component={Login} />
           <ProtectedRoute path="/hello" component={Hello} />
           <ProtectedRoute path="/info" component={Info} />

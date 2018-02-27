@@ -1,0 +1,924 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<ThirdStep
+  defaultValues={
+    Object {
+      "details": "",
+      "email": "",
+      "name": "",
+      "username": "",
+    }
+  }
+  submit={[Function]}
+>
+  <t
+    defaultValues={
+      Object {
+        "details": "",
+        "email": "",
+        "name": "",
+        "username": "",
+      }
+    }
+    dontValidateOnMount={true}
+    onSubmit={[Function]}
+    validateError={[Function]}
+    validateOnSubmit={true}
+  >
+    <Connect(t)
+      defaultValues={
+        Object {
+          "details": "",
+          "email": "",
+          "name": "",
+          "username": "",
+        }
+      }
+      dontValidateOnMount={true}
+      onSubmit={[Function]}
+      store={
+        Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        }
+      }
+      validateError={[Function]}
+      validateOnSubmit={true}
+    >
+      <t
+        defaultValues={
+          Object {
+            "details": "",
+            "email": "",
+            "name": "",
+            "username": "",
+          }
+        }
+        dispatch={[Function]}
+        dontValidateOnMount={true}
+        formState={
+          Object {
+            "asyncErrors": Object {},
+            "asyncSuccesses": Object {},
+            "asyncValidations": 0,
+            "asyncWarnings": Object {},
+            "errors": Object {},
+            "submits": 0,
+            "submitted": false,
+            "submitting": false,
+            "successes": Object {},
+            "touched": Object {},
+            "validating": Object {},
+            "validationFailed": Object {},
+            "validationFailures": 0,
+            "values": Object {
+              "details": "",
+              "email": "",
+              "name": "",
+              "username": "",
+            },
+            "warnings": Object {},
+          }
+        }
+        onSubmit={[Function]}
+        store={
+          Object {
+            "dispatch": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+            Symbol(observable): [Function],
+          }
+        }
+        storeSubscription={
+          Subscription {
+            "listeners": Object {
+              "clear": [Function],
+              "get": [Function],
+              "notify": [Function],
+              "subscribe": [Function],
+            },
+            "onStateChange": [Function],
+            "parentSub": undefined,
+            "store": Object {
+              "dispatch": [Function],
+              "getState": [Function],
+              "replaceReducer": [Function],
+              "subscribe": [Function],
+              Symbol(observable): [Function],
+            },
+            "unsubscribe": [Function],
+          }
+        }
+        validateError={[Function]}
+        validateOnSubmit={true}
+      >
+        <FormInput
+          error=""
+          onChange={[Function]}
+          placeholder="User name"
+          value=""
+        >
+          <WithStyles(FormControl)
+            error={false}
+          >
+            <FormControl
+              classes={
+                Object {
+                  "fullWidth": "MuiFormControl-fullWidth-4",
+                  "marginDense": "MuiFormControl-marginDense-3",
+                  "marginNormal": "MuiFormControl-marginNormal-2",
+                  "root": "MuiFormControl-root-1",
+                }
+              }
+              component="div"
+              disabled={false}
+              error={false}
+              fullWidth={false}
+              margin="none"
+              required={false}
+            >
+              <div
+                className="MuiFormControl-root-1"
+                onBlur={[Function]}
+                onFocus={[Function]}
+              >
+                <WithStyles(InputLabel)
+                  htmlFor="name-error"
+                >
+                  <InputLabel
+                    classes={
+                      Object {
+                        "animated": "MuiInputLabel-animated-9",
+                        "disabled": "MuiInputLabel-disabled-10",
+                        "formControl": "MuiInputLabel-formControl-6",
+                        "labelDense": "MuiInputLabel-labelDense-7",
+                        "root": "MuiInputLabel-root-5",
+                        "shrink": "MuiInputLabel-shrink-8",
+                      }
+                    }
+                    disableAnimation={false}
+                    disabled={false}
+                    htmlFor="name-error"
+                  >
+                    <WithStyles(FormLabel)
+                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+                      data-shrink={false}
+                      htmlFor="name-error"
+                    >
+                      <FormLabel
+                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+                        classes={
+                          Object {
+                            "disabled": "MuiFormLabel-disabled-14",
+                            "error": "MuiFormLabel-error-13",
+                            "focused": "MuiFormLabel-focused-12",
+                            "root": "MuiFormLabel-root-11",
+                          }
+                        }
+                        component="label"
+                        data-shrink={false}
+                        htmlFor="name-error"
+                      >
+                        <label
+                          className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+                          data-shrink={false}
+                          htmlFor="name-error"
+                        >
+                          User name
+                        </label>
+                      </FormLabel>
+                    </WithStyles(FormLabel)>
+                  </InputLabel>
+                </WithStyles(InputLabel)>
+                <WithStyles(Input)
+                  id="name-error"
+                  onChange={[Function]}
+                  value=""
+                >
+                  <Input
+                    classes={
+                      Object {
+                        "disabled": "MuiInput-disabled-20",
+                        "error": "MuiInput-error-18",
+                        "focused": "MuiInput-focused-19",
+                        "formControl": "MuiInput-formControl-16",
+                        "fullWidth": "MuiInput-fullWidth-23",
+                        "inkbar": "MuiInput-inkbar-17",
+                        "input": "MuiInput-input-24",
+                        "inputDense": "MuiInput-inputDense-25",
+                        "inputDisabled": "MuiInput-inputDisabled-26",
+                        "inputMultiline": "MuiInput-inputMultiline-28",
+                        "inputSearch": "MuiInput-inputSearch-29",
+                        "inputType": "MuiInput-inputType-27",
+                        "multiline": "MuiInput-multiline-22",
+                        "root": "MuiInput-root-15",
+                        "underline": "MuiInput-underline-21",
+                      }
+                    }
+                    disableUnderline={false}
+                    fullWidth={false}
+                    id="name-error"
+                    multiline={false}
+                    onChange={[Function]}
+                    type="text"
+                    value=""
+                  >
+                    <div
+                      className="MuiInput-root-15 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                    >
+                      <input
+                        aria-invalid={false}
+                        aria-required={false}
+                        className="MuiInput-input-24"
+                        disabled={false}
+                        id="name-error"
+                        onChange={[Function]}
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                  </Input>
+                </WithStyles(Input)>
+                <WithStyles(FormHelperText)
+                  id="name-error-text"
+                >
+                  <FormHelperText
+                    classes={
+                      Object {
+                        "dense": "MuiFormHelperText-dense-31",
+                        "disabled": "MuiFormHelperText-disabled-33",
+                        "error": "MuiFormHelperText-error-32",
+                        "root": "MuiFormHelperText-root-30",
+                      }
+                    }
+                    component="p"
+                    id="name-error-text"
+                  >
+                    <p
+                      className="MuiFormHelperText-root-30"
+                      id="name-error-text"
+                    />
+                  </FormHelperText>
+                </WithStyles(FormHelperText)>
+              </div>
+            </FormControl>
+          </WithStyles(FormControl)>
+        </FormInput>
+        <FormInput
+          error=""
+          onChange={[Function]}
+          placeholder="Name"
+          value=""
+        >
+          <WithStyles(FormControl)
+            error={false}
+          >
+            <FormControl
+              classes={
+                Object {
+                  "fullWidth": "MuiFormControl-fullWidth-4",
+                  "marginDense": "MuiFormControl-marginDense-3",
+                  "marginNormal": "MuiFormControl-marginNormal-2",
+                  "root": "MuiFormControl-root-1",
+                }
+              }
+              component="div"
+              disabled={false}
+              error={false}
+              fullWidth={false}
+              margin="none"
+              required={false}
+            >
+              <div
+                className="MuiFormControl-root-1"
+                onBlur={[Function]}
+                onFocus={[Function]}
+              >
+                <WithStyles(InputLabel)
+                  htmlFor="name-error"
+                >
+                  <InputLabel
+                    classes={
+                      Object {
+                        "animated": "MuiInputLabel-animated-9",
+                        "disabled": "MuiInputLabel-disabled-10",
+                        "formControl": "MuiInputLabel-formControl-6",
+                        "labelDense": "MuiInputLabel-labelDense-7",
+                        "root": "MuiInputLabel-root-5",
+                        "shrink": "MuiInputLabel-shrink-8",
+                      }
+                    }
+                    disableAnimation={false}
+                    disabled={false}
+                    htmlFor="name-error"
+                  >
+                    <WithStyles(FormLabel)
+                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+                      data-shrink={false}
+                      htmlFor="name-error"
+                    >
+                      <FormLabel
+                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+                        classes={
+                          Object {
+                            "disabled": "MuiFormLabel-disabled-14",
+                            "error": "MuiFormLabel-error-13",
+                            "focused": "MuiFormLabel-focused-12",
+                            "root": "MuiFormLabel-root-11",
+                          }
+                        }
+                        component="label"
+                        data-shrink={false}
+                        htmlFor="name-error"
+                      >
+                        <label
+                          className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+                          data-shrink={false}
+                          htmlFor="name-error"
+                        >
+                          Name
+                        </label>
+                      </FormLabel>
+                    </WithStyles(FormLabel)>
+                  </InputLabel>
+                </WithStyles(InputLabel)>
+                <WithStyles(Input)
+                  id="name-error"
+                  onChange={[Function]}
+                  value=""
+                >
+                  <Input
+                    classes={
+                      Object {
+                        "disabled": "MuiInput-disabled-20",
+                        "error": "MuiInput-error-18",
+                        "focused": "MuiInput-focused-19",
+                        "formControl": "MuiInput-formControl-16",
+                        "fullWidth": "MuiInput-fullWidth-23",
+                        "inkbar": "MuiInput-inkbar-17",
+                        "input": "MuiInput-input-24",
+                        "inputDense": "MuiInput-inputDense-25",
+                        "inputDisabled": "MuiInput-inputDisabled-26",
+                        "inputMultiline": "MuiInput-inputMultiline-28",
+                        "inputSearch": "MuiInput-inputSearch-29",
+                        "inputType": "MuiInput-inputType-27",
+                        "multiline": "MuiInput-multiline-22",
+                        "root": "MuiInput-root-15",
+                        "underline": "MuiInput-underline-21",
+                      }
+                    }
+                    disableUnderline={false}
+                    fullWidth={false}
+                    id="name-error"
+                    multiline={false}
+                    onChange={[Function]}
+                    type="text"
+                    value=""
+                  >
+                    <div
+                      className="MuiInput-root-15 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                    >
+                      <input
+                        aria-invalid={false}
+                        aria-required={false}
+                        className="MuiInput-input-24"
+                        disabled={false}
+                        id="name-error"
+                        onChange={[Function]}
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                  </Input>
+                </WithStyles(Input)>
+                <WithStyles(FormHelperText)
+                  id="name-error-text"
+                >
+                  <FormHelperText
+                    classes={
+                      Object {
+                        "dense": "MuiFormHelperText-dense-31",
+                        "disabled": "MuiFormHelperText-disabled-33",
+                        "error": "MuiFormHelperText-error-32",
+                        "root": "MuiFormHelperText-root-30",
+                      }
+                    }
+                    component="p"
+                    id="name-error-text"
+                  >
+                    <p
+                      className="MuiFormHelperText-root-30"
+                      id="name-error-text"
+                    />
+                  </FormHelperText>
+                </WithStyles(FormHelperText)>
+              </div>
+            </FormControl>
+          </WithStyles(FormControl)>
+        </FormInput>
+        <FormInput
+          error=""
+          onChange={[Function]}
+          placeholder="Email"
+          value=""
+        >
+          <WithStyles(FormControl)
+            error={false}
+          >
+            <FormControl
+              classes={
+                Object {
+                  "fullWidth": "MuiFormControl-fullWidth-4",
+                  "marginDense": "MuiFormControl-marginDense-3",
+                  "marginNormal": "MuiFormControl-marginNormal-2",
+                  "root": "MuiFormControl-root-1",
+                }
+              }
+              component="div"
+              disabled={false}
+              error={false}
+              fullWidth={false}
+              margin="none"
+              required={false}
+            >
+              <div
+                className="MuiFormControl-root-1"
+                onBlur={[Function]}
+                onFocus={[Function]}
+              >
+                <WithStyles(InputLabel)
+                  htmlFor="name-error"
+                >
+                  <InputLabel
+                    classes={
+                      Object {
+                        "animated": "MuiInputLabel-animated-9",
+                        "disabled": "MuiInputLabel-disabled-10",
+                        "formControl": "MuiInputLabel-formControl-6",
+                        "labelDense": "MuiInputLabel-labelDense-7",
+                        "root": "MuiInputLabel-root-5",
+                        "shrink": "MuiInputLabel-shrink-8",
+                      }
+                    }
+                    disableAnimation={false}
+                    disabled={false}
+                    htmlFor="name-error"
+                  >
+                    <WithStyles(FormLabel)
+                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+                      data-shrink={false}
+                      htmlFor="name-error"
+                    >
+                      <FormLabel
+                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+                        classes={
+                          Object {
+                            "disabled": "MuiFormLabel-disabled-14",
+                            "error": "MuiFormLabel-error-13",
+                            "focused": "MuiFormLabel-focused-12",
+                            "root": "MuiFormLabel-root-11",
+                          }
+                        }
+                        component="label"
+                        data-shrink={false}
+                        htmlFor="name-error"
+                      >
+                        <label
+                          className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+                          data-shrink={false}
+                          htmlFor="name-error"
+                        >
+                          Email
+                        </label>
+                      </FormLabel>
+                    </WithStyles(FormLabel)>
+                  </InputLabel>
+                </WithStyles(InputLabel)>
+                <WithStyles(Input)
+                  id="name-error"
+                  onChange={[Function]}
+                  value=""
+                >
+                  <Input
+                    classes={
+                      Object {
+                        "disabled": "MuiInput-disabled-20",
+                        "error": "MuiInput-error-18",
+                        "focused": "MuiInput-focused-19",
+                        "formControl": "MuiInput-formControl-16",
+                        "fullWidth": "MuiInput-fullWidth-23",
+                        "inkbar": "MuiInput-inkbar-17",
+                        "input": "MuiInput-input-24",
+                        "inputDense": "MuiInput-inputDense-25",
+                        "inputDisabled": "MuiInput-inputDisabled-26",
+                        "inputMultiline": "MuiInput-inputMultiline-28",
+                        "inputSearch": "MuiInput-inputSearch-29",
+                        "inputType": "MuiInput-inputType-27",
+                        "multiline": "MuiInput-multiline-22",
+                        "root": "MuiInput-root-15",
+                        "underline": "MuiInput-underline-21",
+                      }
+                    }
+                    disableUnderline={false}
+                    fullWidth={false}
+                    id="name-error"
+                    multiline={false}
+                    onChange={[Function]}
+                    type="text"
+                    value=""
+                  >
+                    <div
+                      className="MuiInput-root-15 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                    >
+                      <input
+                        aria-invalid={false}
+                        aria-required={false}
+                        className="MuiInput-input-24"
+                        disabled={false}
+                        id="name-error"
+                        onChange={[Function]}
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                  </Input>
+                </WithStyles(Input)>
+                <WithStyles(FormHelperText)
+                  id="name-error-text"
+                >
+                  <FormHelperText
+                    classes={
+                      Object {
+                        "dense": "MuiFormHelperText-dense-31",
+                        "disabled": "MuiFormHelperText-disabled-33",
+                        "error": "MuiFormHelperText-error-32",
+                        "root": "MuiFormHelperText-root-30",
+                      }
+                    }
+                    component="p"
+                    id="name-error-text"
+                  >
+                    <p
+                      className="MuiFormHelperText-root-30"
+                      id="name-error-text"
+                    />
+                  </FormHelperText>
+                </WithStyles(FormHelperText)>
+              </div>
+            </FormControl>
+          </WithStyles(FormControl)>
+        </FormInput>
+        <FormInput
+          error=""
+          multiline={true}
+          onChange={[Function]}
+          placeholder="Details"
+          value=""
+        >
+          <WithStyles(FormControl)
+            error={false}
+          >
+            <FormControl
+              classes={
+                Object {
+                  "fullWidth": "MuiFormControl-fullWidth-4",
+                  "marginDense": "MuiFormControl-marginDense-3",
+                  "marginNormal": "MuiFormControl-marginNormal-2",
+                  "root": "MuiFormControl-root-1",
+                }
+              }
+              component="div"
+              disabled={false}
+              error={false}
+              fullWidth={false}
+              margin="none"
+              required={false}
+            >
+              <div
+                className="MuiFormControl-root-1"
+                onBlur={[Function]}
+                onFocus={[Function]}
+              >
+                <WithStyles(InputLabel)
+                  htmlFor="name-error"
+                >
+                  <InputLabel
+                    classes={
+                      Object {
+                        "animated": "MuiInputLabel-animated-9",
+                        "disabled": "MuiInputLabel-disabled-10",
+                        "formControl": "MuiInputLabel-formControl-6",
+                        "labelDense": "MuiInputLabel-labelDense-7",
+                        "root": "MuiInputLabel-root-5",
+                        "shrink": "MuiInputLabel-shrink-8",
+                      }
+                    }
+                    disableAnimation={false}
+                    disabled={false}
+                    htmlFor="name-error"
+                  >
+                    <WithStyles(FormLabel)
+                      className="MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+                      data-shrink={false}
+                      htmlFor="name-error"
+                    >
+                      <FormLabel
+                        className="MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+                        classes={
+                          Object {
+                            "disabled": "MuiFormLabel-disabled-14",
+                            "error": "MuiFormLabel-error-13",
+                            "focused": "MuiFormLabel-focused-12",
+                            "root": "MuiFormLabel-root-11",
+                          }
+                        }
+                        component="label"
+                        data-shrink={false}
+                        htmlFor="name-error"
+                      >
+                        <label
+                          className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+                          data-shrink={false}
+                          htmlFor="name-error"
+                        >
+                          Details
+                        </label>
+                      </FormLabel>
+                    </WithStyles(FormLabel)>
+                  </InputLabel>
+                </WithStyles(InputLabel)>
+                <WithStyles(Input)
+                  id="name-error"
+                  multiline={true}
+                  onChange={[Function]}
+                  value=""
+                >
+                  <Input
+                    classes={
+                      Object {
+                        "disabled": "MuiInput-disabled-20",
+                        "error": "MuiInput-error-18",
+                        "focused": "MuiInput-focused-19",
+                        "formControl": "MuiInput-formControl-16",
+                        "fullWidth": "MuiInput-fullWidth-23",
+                        "inkbar": "MuiInput-inkbar-17",
+                        "input": "MuiInput-input-24",
+                        "inputDense": "MuiInput-inputDense-25",
+                        "inputDisabled": "MuiInput-inputDisabled-26",
+                        "inputMultiline": "MuiInput-inputMultiline-28",
+                        "inputSearch": "MuiInput-inputSearch-29",
+                        "inputType": "MuiInput-inputType-27",
+                        "multiline": "MuiInput-multiline-22",
+                        "root": "MuiInput-root-15",
+                        "underline": "MuiInput-underline-21",
+                      }
+                    }
+                    disableUnderline={false}
+                    fullWidth={false}
+                    id="name-error"
+                    multiline={true}
+                    onChange={[Function]}
+                    type="text"
+                    value=""
+                  >
+                    <div
+                      className="MuiInput-root-15 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-multiline-22 MuiInput-underline-21"
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                    >
+                      <WithStyles(Textarea)
+                        aria-invalid={false}
+                        aria-required={false}
+                        className="MuiInput-input-24 MuiInput-inputMultiline-28"
+                        disabled={false}
+                        id="name-error"
+                        onChange={[Function]}
+                        textareaRef={[Function]}
+                        type="text"
+                        value=""
+                      >
+                        <Textarea
+                          aria-invalid={false}
+                          aria-required={false}
+                          className="MuiInput-input-24 MuiInput-inputMultiline-28"
+                          classes={
+                            Object {
+                              "root": "MuiTextarea-root-34",
+                              "shadow": "MuiTextarea-shadow-36",
+                              "textarea": "MuiTextarea-textarea-35",
+                            }
+                          }
+                          disabled={false}
+                          id="name-error"
+                          onChange={[Function]}
+                          rows={1}
+                          textareaRef={[Function]}
+                          type="text"
+                          value=""
+                        >
+                          <div
+                            className="MuiTextarea-root-34"
+                            style={
+                              Object {
+                                "height": 0,
+                              }
+                            }
+                          >
+                            <EventListener
+                              onResize={[Function]}
+                              target="window"
+                            />
+                            <textarea
+                              aria-hidden="true"
+                              className="MuiTextarea-shadow-36 MuiTextarea-textarea-35"
+                              readOnly={true}
+                              rows="1"
+                              tabIndex={-1}
+                              value=""
+                            />
+                            <textarea
+                              aria-hidden="true"
+                              className="MuiTextarea-shadow-36 MuiTextarea-textarea-35"
+                              readOnly={true}
+                              rows={1}
+                              tabIndex={-1}
+                              value=""
+                            />
+                            <textarea
+                              aria-invalid={false}
+                              aria-required={false}
+                              className="MuiTextarea-textarea-35 MuiInput-input-24 MuiInput-inputMultiline-28"
+                              disabled={false}
+                              id="name-error"
+                              onChange={[Function]}
+                              rows={1}
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                        </Textarea>
+                      </WithStyles(Textarea)>
+                    </div>
+                  </Input>
+                </WithStyles(Input)>
+                <WithStyles(FormHelperText)
+                  id="name-error-text"
+                >
+                  <FormHelperText
+                    classes={
+                      Object {
+                        "dense": "MuiFormHelperText-dense-31",
+                        "disabled": "MuiFormHelperText-disabled-33",
+                        "error": "MuiFormHelperText-error-32",
+                        "root": "MuiFormHelperText-root-30",
+                      }
+                    }
+                    component="p"
+                    id="name-error-text"
+                  >
+                    <p
+                      className="MuiFormHelperText-root-30"
+                      id="name-error-text"
+                    />
+                  </FormHelperText>
+                </WithStyles(FormHelperText)>
+              </div>
+            </FormControl>
+          </WithStyles(FormControl)>
+        </FormInput>
+        <WithStyles(Button)
+          color="primary"
+          onClick={[Function]}
+          variant="raised"
+        >
+          <Button
+            classes={
+              Object {
+                "colorInherit": "MuiButton-colorInherit-41",
+                "disabled": "MuiButton-disabled-46",
+                "fab": "MuiButton-fab-47",
+                "flatPrimary": "MuiButton-flatPrimary-39",
+                "flatSecondary": "MuiButton-flatSecondary-40",
+                "fullWidth": "MuiButton-fullWidth-51",
+                "keyboardFocused": "MuiButton-keyboardFocused-43",
+                "label": "MuiButton-label-38",
+                "mini": "MuiButton-mini-48",
+                "raised": "MuiButton-raised-42",
+                "raisedPrimary": "MuiButton-raisedPrimary-44",
+                "raisedSecondary": "MuiButton-raisedSecondary-45",
+                "root": "MuiButton-root-37",
+                "sizeLarge": "MuiButton-sizeLarge-50",
+                "sizeSmall": "MuiButton-sizeSmall-49",
+              }
+            }
+            color="primary"
+            disableFocusRipple={false}
+            disableRipple={false}
+            disabled={false}
+            fullWidth={false}
+            mini={false}
+            onClick={[Function]}
+            size="medium"
+            type="button"
+            variant="raised"
+          >
+            <WithStyles(ButtonBase)
+              className="MuiButton-root-37 MuiButton-raised-42 MuiButton-raisedPrimary-44"
+              disableRipple={false}
+              disabled={false}
+              focusRipple={true}
+              keyboardFocusedClassName="MuiButton-keyboardFocused-43"
+              onClick={[Function]}
+              type="button"
+            >
+              <ButtonBase
+                centerRipple={false}
+                className="MuiButton-root-37 MuiButton-raised-42 MuiButton-raisedPrimary-44"
+                classes={
+                  Object {
+                    "disabled": "MuiButtonBase-disabled-53",
+                    "root": "MuiButtonBase-root-52",
+                  }
+                }
+                disableRipple={false}
+                disabled={false}
+                focusRipple={true}
+                keyboardFocusedClassName="MuiButton-keyboardFocused-43"
+                onClick={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <button
+                  className="MuiButtonBase-root-52 MuiButton-root-37 MuiButton-raised-42 MuiButton-raisedPrimary-44"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex="0"
+                  type="button"
+                >
+                  <span
+                    className="MuiButton-label-38"
+                  >
+                    Submit
+                  </span>
+                  <WithStyles(TouchRipple)
+                    center={false}
+                    innerRef={[Function]}
+                  >
+                    <TouchRipple
+                      center={false}
+                      classes={
+                        Object {
+                          "ripple": "MuiTouchRipple-ripple-58",
+                          "rippleFast": "MuiTouchRipple-rippleFast-60",
+                          "rippleVisible": "MuiTouchRipple-rippleVisible-59",
+                          "root": "MuiTouchRipple-root-54",
+                          "wrapper": "MuiTouchRipple-wrapper-55",
+                          "wrapperLeaving": "MuiTouchRipple-wrapperLeaving-56",
+                          "wrapperPulsating": "MuiTouchRipple-wrapperPulsating-57",
+                        }
+                      }
+                    >
+                      <TransitionGroup
+                        childFactory={[Function]}
+                        className="MuiTouchRipple-root-54"
+                        component="span"
+                        enter={true}
+                        exit={true}
+                      >
+                        <span
+                          className="MuiTouchRipple-root-54"
+                        />
+                      </TransitionGroup>
+                    </TouchRipple>
+                  </WithStyles(TouchRipple)>
+                </button>
+              </ButtonBase>
+            </WithStyles(ButtonBase)>
+          </Button>
+        </WithStyles(Button)>
+      </t>
+    </Connect(t)>
+  </t>
+</ThirdStep>
+`;
