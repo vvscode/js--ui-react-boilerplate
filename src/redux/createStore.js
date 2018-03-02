@@ -3,7 +3,10 @@ import thunk from 'redux-thunk';
 
 import rootReducer from './rootReducer';
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const composeEnhancers =
+  process.env.NODE_ENV === 'production'
+    ? compose
+    : window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 export default () => {
   const store = createStore(
