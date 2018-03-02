@@ -12,7 +12,10 @@ yarn-error.log*
 yarn.lock
 package-lock.json
 
+# IDE
+.vscode
+.idea
+
 # OTHER
 build
-.idea
 coverage
