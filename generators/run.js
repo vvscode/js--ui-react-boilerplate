@@ -1,26 +1,21 @@
 'use strict';
 
 const Generator = require('yeoman-generator');
+const fs = require('fs');
 
 const cfg = {
   generatorsPath: 'generators',
   componentsPath: 'src/components',
-  availableGenerators: ['component-functional', 'component-class'],
-};
-
-const getComponentName = path => {
-  const names = path.split('/');
-
-  return names.length > 1 ? names.pop() : path;
 };
 
 const validateComponentPath = val =>
-  /^([A-Za-z/\d])+$/.test(val)
+  /^([A-Z][^/]*(\/|$))+$/.test(val)
     ? true
-    : 'Component name or path with name may only include letters, numbers and "/".';
+    : 'Component name or path should be in camel case (ex. SomeComponent or Table/Cell).';
 
 const validateGeneratorName = val => {
   const isValid = /^([A-Za-z\-\d])+$/.test(val);
+
   const isExist = cfg.availableGenerators.includes(val);
 
   if (!isValid) {
@@ -38,26 +33,37 @@ module.exports = class extends Generator {
 
     this.argument('generatorNameArg', { type: String, required: false });
     this.argument('componentPathArg', { type: String, required: false });
+    this.argument('data', { type: Object, required: false });
+
+    const generatorsAbsPath = `${process.cwd()}/${cfg.generatorsPath}`;
+
+    cfg.availableGenerators = fs
+      .readdirSync(generatorsAbsPath)
+      .filter(name => !name.includes('.'));
   }
+
   validateArgs() {
     const { generatorNameArg, componentPathArg } = this.options;
 
-    const isValidGeneratorName = generatorNameArg
-      ? this._runValidator(validateGeneratorName, generatorNameArg)
-      : true;
+    const isValidGeneratorName = this._runValidator(
+      validateGeneratorName,
+      generatorNameArg,
+    );
 
-    const isValidComponentPath = componentPathArg
-      ? this._runValidator(validateComponentPath, componentPathArg)
-      : true;
+    const isValidComponentPath = this._runValidator(
+      validateComponentPath,
+      componentPathArg,
+    );
 
     if (isValidGeneratorName && isValidComponentPath) {
       this._prompting();
     }
   }
+
   _runValidator(validator, value) {
     const validatorResult = validator(value);
 
-    if (typeof validator(value) === 'string') {
+    if (value && typeof validatorResult === 'string') {
       this.log(validatorResult);
 
       return false;
@@ -65,6 +71,7 @@ module.exports = class extends Generator {
 
     return true;
   }
+
   _prompting() {
     const { generatorNameArg, componentPathArg } = this.options;
     const prompts = [];
@@ -94,18 +101,35 @@ module.exports = class extends Generator {
 
     return this.prompt(prompts).then(this._copyFiles.bind(this));
   }
+
   _copyFiles(answers) {
     const { generatorsPath, componentsPath } = cfg;
-    const { generatorNameArg, componentPathArg } = this.options;
+    const { generatorNameArg, componentPathArg, data } = this.options;
     const generatorName = generatorNameArg || answers.generatorName;
     const componentPath = componentPathArg || answers.componentPath;
 
-    this.sourceRoot(`${generatorsPath}/${generatorName}`);
+    const generatorPath = `${generatorsPath}/${generatorName}`;
+    const generatorAbsPath = `${process.cwd()}/${generatorPath}`;
 
-    this.fs.copyTpl(
-      this.templatePath('index.ejs'),
-      this.destinationPath(`${componentsPath}/${componentPath}/index.js`),
-      { componentName: getComponentName(componentPath) },
-    );
+    this.sourceRoot(generatorPath);
+
+    const filesList = fs
+      .readdirSync(generatorAbsPath)
+      .filter(name => name.includes('.'));
+
+    filesList.forEach(fileName => {
+      const resultFileName = fileName.replace('.ejs', '');
+
+      this.fs.copyTpl(
+        this.templatePath(fileName),
+        this.destinationPath(
+          `${componentsPath}/${componentPath}/${resultFileName}`,
+        ),
+        {
+          componentName: componentPath.split('/').pop(),
+          ...JSON.parse(data),
+        },
+      );
+    });
   }
 };
