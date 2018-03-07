@@ -110,6 +110,7 @@ module.exports = class extends Generator {
 
     const generatorPath = `${generatorsPath}/${generatorName}`;
     const generatorAbsPath = `${process.cwd()}/${generatorPath}`;
+    const parsedData = data ? JSON.parse(data) : {};
 
     this.sourceRoot(generatorPath);
 
@@ -127,7 +128,7 @@ module.exports = class extends Generator {
         ),
         {
           componentName: componentPath.split('/').pop(),
-          ...JSON.parse(data),
+          ...parsedData,
         },
       );
     });
