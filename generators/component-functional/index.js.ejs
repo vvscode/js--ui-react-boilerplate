@@ -1,0 +1,14 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+const <%= componentName %> = ({ something }) => <h4>Hi! {something}</h4>;
+
+<%= componentName %>.defaultProps = {
+  something: '',
+};
+
+<%= componentName %>.propTypes = {
+  something: PropTypes.string,
+};
+
+export default <%= componentName %>;

@@ -1,0 +1,23 @@
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import injectSheet from 'react-jss';
+
+import styles from './styles';
+
+class <%= componentName %> extends Component {
+  render() {
+    const { classes, something } = this.props;
+
+    return <h4 className={classes.label}>Hi! {something}</h4>;
+  }
+}
+
+<%= componentName %>.defaultProps = {
+  something: '',
+};
+
+<%= componentName %>.propTypes = {
+  something: PropTypes.string,
+};
+
+export default injectSheet(styles)(<%= componentName %>);

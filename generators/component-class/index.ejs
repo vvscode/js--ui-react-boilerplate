@@ -1,0 +1,18 @@
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+class <%= componentName %> extends Component {
+  render() {
+    return <h4>Hi! {this.props.something}</h4>;
+  }
+}
+
+<%= componentName %>.defaultProps = {
+  something: '',
+};
+
+<%= componentName %>.propTypes = {
+  something: PropTypes.string,
+};
+
+export default <%= componentName %>;
