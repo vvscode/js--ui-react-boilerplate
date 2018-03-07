@@ -9,23 +9,12 @@ const cfg = {
 };
 
 const validateComponentPath = val =>
-  /^([A-Z][^/]*(\/|$))+$/.test(val)
+  /^(([A-Z][^/]*(\/))*[A-Z][^/]*)$/.test(val)
     ? true
     : 'Component name or path should be in camel case (ex. SomeComponent or Table/Cell).';
 
-const validateGeneratorName = val => {
-  const isValid = /^([A-Za-z\-\d])+$/.test(val);
-
-  const isExist = cfg.availableGenerators.includes(val);
-
-  if (!isValid) {
-    return 'Generator name may only include letters, numbers and "-".';
-  } else if (!isExist) {
-    return 'Generator is not exist.';
-  }
-
-  return true;
-};
+const validateGeneratorName = val =>
+  cfg.availableGenerators.includes(val) || 'Generator is not exist.';
 
 module.exports = class extends Generator {
   constructor(args, opts) {
@@ -82,11 +71,6 @@ module.exports = class extends Generator {
         name: 'generatorName',
         message: 'Select generator:',
         choices: cfg.availableGenerators,
-        validate(input) {
-          return /^([A-Za-z\-\d])+$/.test(input)
-            ? true
-            : 'Generator name may only include letters, numbers and "-".';
-        },
       });
     }
 
